@@ -4,7 +4,7 @@ import LoggerFactory from 'metallic-logger'
 import LauncherFactory from 'metallic-launcher'
 export { LEADER, SERVER } from 'metallic-launcher'
 
-export default class Nitro {
+export default class Metallic {
   constructor (clientOptions = {}) {
     const options = config(clientOptions)
 
