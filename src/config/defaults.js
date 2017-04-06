@@ -8,7 +8,7 @@ const pkg = readPkgUp.sync({
 
 export default {
   name: pkg.name,
-  port: 3000,
+  port: 0,
   cluster: {
     enabled: false
   },
