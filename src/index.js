@@ -15,11 +15,16 @@ export default class Metallic {
       },
       ...options.logger
     })
+
     this._metrics = MetricsFactory.create(this._logger, {
       prefix: `${options.name}:${options.cluster.role}`,
       ...options
     })
-    this._launcher = LauncherFactory.create(this._metrics, this._logger, options.cluster)
+
+    this._launcher = LauncherFactory.create(this._metrics, this._logger, {
+      port: options.port,
+      ...options.cluster
+    })
   }
 
   get role () {
