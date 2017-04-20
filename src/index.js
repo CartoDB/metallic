@@ -18,7 +18,7 @@ export default class Metallic {
 
     this._metrics = MetricsFactory.create(this._logger, {
       prefix: `${options.name}:${options.cluster.role}`,
-      ...options
+      ...options.metrics
     })
 
     this._launcher = LauncherFactory.create(this._metrics, this._logger, {
