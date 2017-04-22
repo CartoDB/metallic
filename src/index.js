@@ -7,24 +7,25 @@ export { LEADER, SERVER } from 'metallic-launcher'
 export default class Metallic {
   constructor (clientOptions = {}) {
     const options = config(clientOptions)
-
-    this._logger = LoggerFactory.create({
+    const loggerOptions = {
       name: options.name,
       extra: {
         role: options.cluster.role
       },
       ...options.logger
-    })
-
-    this._metrics = MetricsFactory.create(this._logger, {
+    }
+    const metricsOptions = {
       prefix: `${options.name}:${options.cluster.role}`,
       ...options.metrics
-    })
-
-    this._launcher = LauncherFactory.create(this._metrics, this._logger, {
+    }
+    const launcherOptions = {
       port: options.port,
       ...options.cluster
-    })
+    }
+
+    this._logger = LoggerFactory.create(loggerOptions)
+    this._metrics = MetricsFactory.create(this._logger, metricsOptions)
+    this._launcher = LauncherFactory.create(this._metrics, this._logger, launcherOptions)
   }
 
   get role () {
