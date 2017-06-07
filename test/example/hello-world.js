@@ -1,19 +1,20 @@
-import { SERVER } from '../../src'
-import Example from './example'
+import Metallic, { SERVER } from '../../src'
 
-export default class HelloWorld extends Example {
-  constructor (options) {
-    super(options)
+export default class HelloWorld {
+  static create (options) {
+    const metallic = new Metallic(options)
 
-    if (this.nitro.role === SERVER) {
+    if (metallic.role === SERVER) {
       const body = Buffer.from('Hello World\n')
       const message = body.toString('utf8')
 
-      this.nitro.app.use(ctx => {
+      metallic.app.use(ctx => {
         ctx.log.info(message)
         ctx.metrics.increment('hello_world')
         ctx.body = body
       })
     }
+
+    return metallic
   }
 }

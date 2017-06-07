@@ -1,46 +1,46 @@
 import assert from 'assert'
-import Nitro, { SERVER } from '../src'
+import Metallic, { SERVER } from '../src'
 
-describe('nitro OOP API', function () {
+describe('metallic OOP API', function () {
   beforeEach(function () {
-    this.nitro = new Nitro({ port: 0 })
+    this.metallic = new Metallic({ port: 0 })
   })
 
   it('.start() should init the service', async function () {
     assert.doesNotThrow(async () => {
-      await this.nitro.start()
-      await this.nitro.stop()
+      await this.metallic.start()
+      await this.metallic.stop()
     })
   })
 
   it('.stop() should close the service', function () {
     assert.doesNotThrow(async () => {
-      await this.nitro.start()
-      await this.nitro.stop()
+      await this.metallic.start()
+      await this.metallic.stop()
     })
   })
 
   it(`.role should return server`, function () {
-    assert.equal(this.nitro.role, SERVER)
+    assert.equal(this.metallic.role, SERVER)
   })
 
   it('.logger should return a logger provider', function () {
-    assert.doesNotThrow(() => this.nitro.logger.debug())
-    assert.doesNotThrow(() => this.nitro.logger.info())
-    assert.doesNotThrow(() => this.nitro.logger.warn())
-    assert.doesNotThrow(() => this.nitro.logger.error())
+    assert.doesNotThrow(() => this.metallic.logger.debug())
+    assert.doesNotThrow(() => this.metallic.logger.info())
+    assert.doesNotThrow(() => this.metallic.logger.warn())
+    assert.doesNotThrow(() => this.metallic.logger.error())
   })
 
   it('.metrics should return a metrics instance', function () {
-    assert.doesNotThrow(() => this.nitro.metrics.timing())
-    assert.doesNotThrow(() => this.nitro.metrics.gauge())
-    assert.doesNotThrow(() => this.nitro.metrics.increment())
+    assert.doesNotThrow(() => this.metallic.metrics.timing())
+    assert.doesNotThrow(() => this.metallic.metrics.gauge())
+    assert.doesNotThrow(() => this.metallic.metrics.increment())
   })
 })
 
-describe('nitro FP API', function () {
+describe('metallic FP API', function () {
   beforeEach(function () {
-    const { app, role, logger, metrics, start, stop } = new Nitro({ port: 0 })
+    const { app, role, logger, metrics, start, stop } = new Metallic({ port: 0 })
     this.app = app
     this.role = role
     this.logger = logger
