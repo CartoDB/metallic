@@ -18,7 +18,7 @@ export default {
     path: path.join(process.cwd(), pkg.name + '.log')
   },
   metrics: {
-    enabled: false,
+    enabled: true,
     host: 'localhost',
     port: 8125,
     interval: 5000
