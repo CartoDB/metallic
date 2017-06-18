@@ -21,10 +21,10 @@ describe('end-to-end app examples', function () {
   it('GET / should response 200 ok', async function () {
     const res = await fetch(`http://localhost:${this.port}/`)
     const body = await res.text()
+
     assert.ok(res.ok)
     assert.equal(res.status, 200)
     assert.equal(res.headers.get('content-type'), 'application/octet-stream')
-
     assert.equal(body, 'Hello World\n')
   })
 

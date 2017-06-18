@@ -1,6 +1,7 @@
 import config from './config'
 import MetricsFactory from 'metallic-metrics'
 import LoggerFactory from 'metallic-logger'
+import HttpServerFactory from 'metallic-app'
 import LauncherFactory from 'metallic-launcher'
 export { LEADER, SERVER } from 'metallic-launcher'
 
@@ -26,7 +27,16 @@ export default class Metallic {
       }
     })
 
+    const httpServer = this._httpServer = HttpServerFactory.create({
+      metrics,
+      logger,
+      options: {
+        port: options.port
+      }
+    })
+
     this._launcher = LauncherFactory.create({
+      httpServer,
       metrics,
       logger,
       options: {
@@ -41,7 +51,7 @@ export default class Metallic {
   }
 
   get app () {
-    return this._launcher.app.provider
+    return this._httpServer.provider
   }
 
   get logger () {
