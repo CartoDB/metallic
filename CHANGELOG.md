@@ -1,5 +1,11 @@
 # Metallic ChangeLog
 
+## v0.4.0 (2017-mm-dd)
+
+ - Upgrade metallic deps
+ - Inject metallic-app to launcher
+
+
 ## v0.3.0 (2017-06-07)
 
  - Upgrade metallic deps
