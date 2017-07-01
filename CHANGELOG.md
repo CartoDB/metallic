@@ -1,5 +1,10 @@
 # Metallic ChangeLog
 
+## v0.5.0 (2017-07-02)
+
+ - Upgrade metallic-app to version 0.7.0
+
+
 ## v0.4.0 (2017-06-25)
 
  - Upgrade metallic deps
