@@ -1,5 +1,10 @@
 # Metallic ChangeLog
 
+## v0.6.0 (2017-07-23)
+
+ - Upgrade metallic-launcher to version 0.8.0
+
+
 ## v0.5.0 (2017-07-02)
 
  - Upgrade metallic-app to version 0.7.0
