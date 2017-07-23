@@ -10,8 +10,8 @@ describe('end-to-end app examples', function () {
   })
 
   beforeEach(async function () {
-    const httpServer = await this.sut.start()
-    this.port = httpServer.address().port
+    const httpServerInfo = await this.sut.start()
+    this.port = httpServerInfo[process.pid].port
   })
 
   afterEach(function () {
