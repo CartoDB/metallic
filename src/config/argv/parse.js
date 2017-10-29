@@ -30,7 +30,7 @@ export default function parseArguments (options = {}) {
     options.cluster = { enabled: args.cluster }
   }
 
-  if (args.logger || args.console || args.logPath) {
+  if (typeof args.logger === 'boolean' || typeof args.console === 'boolean' || typeof args.logPath === 'string') {
     options.logger = {}
 
     if (typeof args.logger === 'boolean') {
@@ -41,7 +41,7 @@ export default function parseArguments (options = {}) {
       options.logger.console = args.console
     }
 
-    if (args.logPath) {
+    if (typeof args.logPath === 'string') {
       options.logger.path = args.logPath
     }
   }
