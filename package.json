@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "meow": "~3.7.0",
-    "metallic-app": "^0.7.0",
+    "metallic-app": "^0.8.0",
     "metallic-launcher": "^0.8.1",
     "metallic-logger": "^0.7.0",
     "metallic-metrics": "^0.7.0"
