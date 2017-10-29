@@ -1,5 +1,11 @@
 # Metallic ChangeLog
 
+## v0.6.1 (2017-10-29)
+
+ - Upgrade metallic-launcher to version 0.8.1
+ - Fix logger argument parsing
+
+
 ## v0.6.0 (2017-07-23)
 
  - Upgrade metallic-launcher to version 0.8.0
