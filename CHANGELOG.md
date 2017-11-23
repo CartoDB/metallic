@@ -1,5 +1,24 @@
 # Metallic ChangeLog
 
+## v0.8.0 (2017-11-24)
+
+ - Update deps:
+   + metallic-app: 0.9.0
+   + metallic-launcher: 0.9.0
+   + metallic-logger: 0.9.0
+   + metallic-metrics: 0.9.0"
+   + babel-cli: 6.26.0
+   + babel-plugin-transform-es2015-modules-commonjs: 6.26.0
+   + babel-plugin-transform-object-rest-spread: 6.26.0
+   + babel-register: 6.26.0
+   + mocha: 4.0.1
+   + node-fetch: 1.7.3
+   + nyc: 11.3.0
+   + sinon: 4.1.2
+   + source-map-support: 0.5.0
+   + standard: 10.0.3
+
+
 ## v0.7.0 (2017-10-29)
 
  - Upgrade metallic-app to version 0.8.0
