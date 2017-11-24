@@ -6,7 +6,7 @@ const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-
 
 describe('end-to-end app examples', function () {
   before(function () {
-    this.sut = HelloWorld.create({ port: 0, metrics: { interval: 0 } })
+    this.sut = HelloWorld.create({ port: 0 })
   })
 
   beforeEach(async function () {

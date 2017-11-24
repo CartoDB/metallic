@@ -4,7 +4,7 @@ import Metallic, { SERVER } from '../src'
 describe('metallic', function () {
   describe('OOP API', function () {
     beforeEach(function () {
-      this.metallic = new Metallic({ port: 0, metrics: { interval: 0 } })
+      this.metallic = new Metallic({ port: 0 })
     })
 
     it('.start() should init the service', async function () {
@@ -41,7 +41,7 @@ describe('metallic', function () {
 
   describe('FP API', function () {
     beforeEach(function () {
-      const { app, role, logger, metrics, start, stop } = new Metallic({ port: 0, metrics: { interval: 0 } })
+      const { app, role, logger, metrics, start, stop } = new Metallic({ port: 0 })
       this.app = app
       this.role = role
       this.logger = logger

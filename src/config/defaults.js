@@ -21,7 +21,7 @@ export default {
     enabled: true,
     host: 'localhost',
     port: 8125,
-    interval: 5000
+    interval: process.env.NODE_ENV === 'test' ? 0 : 5000
   },
   arguments: {
     help: undefined
