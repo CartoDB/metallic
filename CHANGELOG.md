@@ -1,5 +1,11 @@
 # Metallic ChangeLog
 
+## v0.9.0 (2017-11-25)
+
+ - Update deps:
+    + metallic-metrics: 0.10.0
+
+
 ## v0.8.0 (2017-11-24)
 
  - Update deps:
