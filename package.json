@@ -28,7 +28,7 @@
     "metallic-app": "^0.9.0",
     "metallic-launcher": "^0.9.0",
     "metallic-logger": "^0.9.0",
-    "metallic-metrics": "^0.9.0"
+    "metallic-metrics": "^0.10.0"
   },
   "scripts": {
     "prebuild": "npm run clean",
