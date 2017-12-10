@@ -1,5 +1,17 @@
 # Metallic ChangeLog
 
+## v0.10.0 (2017-12-10)
+
+ - Update devel deps:
+   + metallic-app: 0.10.0
+   + metallic-launcher: 0.10.0
+   + metallic-logger: 0.10.0
+   + metallic-metrics: 0.12.1
+ - Add travis support
+ - Add source map support for stack traces
+ - Improve test & build commands
+
+
 ## v0.9.0 (2017-11-25)
 
  - Update deps:
