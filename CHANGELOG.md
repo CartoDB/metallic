@@ -1,5 +1,11 @@
 # Metallic ChangeLog
 
+## v0.10.1 (2017-12-10)
+
+ - Update devel deps:
+   + metallic-app: 0.10.1
+
+
 ## v0.10.0 (2017-12-10)
 
  - Update devel deps:
