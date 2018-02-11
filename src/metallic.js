@@ -1,6 +1,6 @@
 import config from './config'
 import MetricsFactory from 'metallic-metrics'
-import LoggerFactory from 'metallic-logger'
+import LoggerFactory, { LoggerInterface } from 'metallic-logger'
 import HttpServerFactory from 'metallic-app'
 import LauncherFactory from 'metallic-launcher'
 
@@ -54,7 +54,9 @@ export default class Metallic {
   }
 
   get logger () {
-    return this._logger.provider
+    if (this._logger instanceof LoggerInterface) {
+      return this._logger.provider
+    }
   }
 
   get metrics () {
