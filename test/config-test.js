@@ -11,6 +11,16 @@ describe('config examples', function () {
     assert.equal(logger.fields.name, name)
   })
 
+  it('should listen on the configured port', async function () {
+    const expectedPort = 3456
+    const metallic = HelloWorld.create({ port: expectedPort })
+
+    const httpServerInfo = await metallic.start()
+    await metallic.stop()
+
+    Object.values(httpServerInfo).forEach(({ port }) => assert.equal(port, expectedPort))
+  })
+
   it('should not create a logger instance', function () {
     const { logger } = HelloWorld.create({
       logger: {
