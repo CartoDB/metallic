@@ -51,6 +51,31 @@ describe('config examples', function () {
     assert.ok(logger.streams.some(stream => stream.type === 'file'))
   })
 
+  it('should create a logger with custom file path output', function () {
+    const expectedPath = 'wadus.log'
+    const { logger } = HelloWorld.create({
+      logger: {
+        file: true,
+        path: expectedPath
+      }
+    })
+
+    assert.ok(logger.streams.filter(stream => stream.type === 'file').every(stream => stream.path === expectedPath))
+  })
+
+  it('should create a logger with custom name', function () {
+    const name = 'wadus'
+    const expectedFileName = `${name}.log`
+    const { logger } = HelloWorld.create({
+      name,
+      logger: {
+        file: true
+      }
+    })
+
+    assert.ok(logger.streams.filter(stream => stream.type === 'file').every(stream => stream.path.endsWith(expectedFileName)))
+  })
+
   it('should create a metrics client', function () {
     const { metrics } = HelloWorld.create({
       metrics: {
