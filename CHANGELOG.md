@@ -1,6 +1,6 @@
 # Metallic ChangeLog
 
-## v0.11.0 (2018-mm-dd)
+## v0.11.1 (2018-mm-dd)
 
  - Update deps:
    + metallic-logger: 0.11.1
