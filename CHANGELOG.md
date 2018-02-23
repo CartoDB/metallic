@@ -1,8 +1,23 @@
 # Metallic ChangeLog
 
+## v0.11.0 (2018-02-23)
+
+ - Avoid runtime error when logger or metrics are not available
+ - Update deps:
+   + meow: ^4.0.0
+   + metallic-logger: ^0.11.0
+   + source-map-support: ^0.5.3
+ - Update devel deps:
+   + mocha: ^5.0.1
+   + node-fetch: ^2.0.0
+   + nyc: ^11.4.1
+   + sinon: ^4.4.0
+   + standard: ^11.0.0
+
+
 ## v0.10.1 (2017-12-10)
 
- - Update devel deps:
+ - Update deps:
    + metallic-app: 0.10.1
 
 
