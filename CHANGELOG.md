@@ -1,5 +1,11 @@
 # Metallic ChangeLog
 
+## v0.11.0 (2018-mm-dd)
+
+ - Update deps:
+   + metallic-logger: 0.11.1
+
+
 ## v0.11.0 (2018-02-23)
 
  - Avoid runtime error when logger or metrics are not available
