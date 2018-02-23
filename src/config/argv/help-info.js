@@ -4,7 +4,7 @@ export default function helpInfo (customHelp) {
       $ npm start [-- <options>]
 
     Examples:
-      $ node app.js -log-path /tmp/app.log
+      $ node app.js --log-path /tmp/app.log
       $ npm start -- -c -p 8000
 
     Options:
