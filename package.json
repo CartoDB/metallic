@@ -1,6 +1,6 @@
 {
   "name": "metallic",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Essential facilities for building apps",
   "main": "lib/index.js",
   "repository": {
