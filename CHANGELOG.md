@@ -1,9 +1,12 @@
 # Metallic ChangeLog
 
-## v0.11.1 (2018-mm-dd)
+## v0.12.0 (2018-02-25)
 
  - Update deps:
    + metallic-logger: 0.11.1
+   + metallic-launcher: 0.11.0
+ - Update devel deps:
+   + sinon: 4.4.2
 
 
 ## v0.11.0 (2018-02-23)
