@@ -26,7 +26,7 @@
   "dependencies": {
     "meow": "^4.0.0",
     "metallic-app": "^0.10.1",
-    "metallic-launcher": "^0.10.0",
+    "metallic-launcher": "^0.11.0",
     "metallic-logger": "^0.11.1",
     "metallic-metrics": "^0.12.1",
     "source-map-support": "^0.5.3"
@@ -54,7 +54,7 @@
     "node-fetch": "^2.0.0",
     "nyc": "^11.4.1",
     "rimraf": "^2.6.2",
-    "sinon": "^4.4.0",
+    "sinon": "^4.4.2",
     "standard": "^11.0.0"
   },
   "standard": {
