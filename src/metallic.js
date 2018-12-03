@@ -2,7 +2,7 @@ import config from './config'
 import MetricsFactory, { MetricsInterface } from 'metallic-metrics'
 import LoggerFactory, { LoggerInterface } from 'metallic-logger'
 import HttpServerFactory from 'metallic-app'
-import LauncherFactory from 'metallic-launcher'
+import LauncherFactory from './launcher'
 
 export default class Metallic {
   constructor (clientOptions = {}) {

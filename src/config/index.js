@@ -1,5 +1,5 @@
 import parseArguments from './argv/parse'
-import { Role } from 'metallic-launcher'
+import { Role } from '../launcher'
 import defaults from './defaults'
 
 export default function config (clientOptions = {}) {
