@@ -1,4 +1,4 @@
-const Metallic = require('../../src')
+const Metallic = require('../../lib')
 const { SERVER } = Metallic
 
 module.exports = class HelloWorld {

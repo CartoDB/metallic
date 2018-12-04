@@ -1,5 +1,5 @@
 const assert = require('assert')
-const Metallic = require('../src')
+const Metallic = require('../lib')
 const { SERVER } = Metallic
 
 describe('metallic', function () {

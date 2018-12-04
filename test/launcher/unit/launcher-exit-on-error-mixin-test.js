@@ -1,8 +1,8 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const LauncherInterface = require('../../../lib/launcher/launcher-interface')
 const DummyLauncher = require('../support/dummy-launcher')
-const LauncherExitOnErrorMixin = require('../../../src/launcher/launcher-exit-on-error-mixin')
+const LauncherExitOnErrorMixin = require('../../../lib/launcher/launcher-exit-on-error-mixin')
 
 class FaultyLauncher extends DummyLauncher {
   run () {

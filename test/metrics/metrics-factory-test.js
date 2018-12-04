@@ -1,5 +1,5 @@
 const assert = require('assert')
-const MetricsFactory = require('../../src/metrics')
+const MetricsFactory = require('../../lib/metrics')
 const { MetricsInterface } = MetricsFactory
 
 describe('metrics-factory', function () {

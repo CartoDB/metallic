@@ -1,10 +1,10 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const LeaderInterface = require('../../../../../src/launcher/cluster/leader/leader-interface')
+const LeaderInterface = require('../../../../../lib/launcher/cluster/leader/leader-interface')
 const DummyLeader = require('../../../support/dummy-leader')
-const LeaderReforkListenerMixin = require('../../../../../src/launcher/cluster/leader/leader-refork-listener-mixin')
-const ServerExitListener = require('../../../../../src/launcher/cluster/leader/server-exit-listener')
+const LeaderReforkListenerMixin = require('../../../../../lib/launcher/cluster/leader/leader-refork-listener-mixin')
+const ServerExitListener = require('../../../../../lib/launcher/cluster/leader/server-exit-listener')
 const cluster = require('cluster')
 
 describe('leader-refork-listener-mixin', function () {

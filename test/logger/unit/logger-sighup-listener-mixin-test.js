@@ -1,11 +1,11 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const LoggerInterface = require('../../../src/logger/logger-interface')
+const LoggerInterface = require('../../../lib/logger/logger-interface')
 const DummyLogger = require('../support/dummy-logger')
-const LoggerSighupListenerMixin = require('../../../src/logger/logger-sighup-listener-mixin')
-const SighupListener = require('../../../src/logger/sighup-listener')
-const { ParentClassError } = require('../../../src/errors')
+const LoggerSighupListenerMixin = require('../../../lib/logger/logger-sighup-listener-mixin')
+const SighupListener = require('../../../lib/logger/sighup-listener')
+const { ParentClassError } = require('../../../lib/errors')
 
 describe('logger-sighup-listener-mixin', function () {
   beforeEach(function () {

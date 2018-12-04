@@ -1,10 +1,10 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const ClusterInterface = require('../../../src/launcher/cluster/cluster-interface')
-const LauncherInterface = require('../../../src/launcher/launcher-interface')
-const Launcher = require('../../../src/launcher/launcher')
-const { MetricsInterface } = require('../../../src/metrics')
-const { LoggerInterface } = require('../../../src/logger')
+const ClusterInterface = require('../../../lib/launcher/cluster/cluster-interface')
+const LauncherInterface = require('../../../lib/launcher/launcher-interface')
+const Launcher = require('../../../lib/launcher/launcher')
+const { MetricsInterface } = require('../../../lib/metrics')
+const { LoggerInterface } = require('../../../lib/logger')
 
 class Target extends ClusterInterface {
   get role () {

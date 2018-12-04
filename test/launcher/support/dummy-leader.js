@@ -1,4 +1,4 @@
-const LeaderInterface = require('../../../src/launcher/cluster/leader/leader-interface')
+const LeaderInterface = require('../../../lib/launcher/cluster/leader/leader-interface')
 
 module.exports = class DummyLeader extends LeaderInterface {
   static is () {}

@@ -1,7 +1,7 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const { LoggerInterface } = require('../../../src/logger')
-const Logger = require('../../../src/logger/logger')
+const { LoggerInterface } = require('../../../lib/logger')
+const Logger = require('../../../lib/logger/logger')
 
 class LoggerProvider extends LoggerInterface {}
 

@@ -1,8 +1,8 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const { ListenerInterface } = require('../../../src/listeners')
-const SigintListener = require('../../../src/launcher/sigint-listener')
+const { ListenerInterface } = require('../../../lib/listeners')
+const SigintListener = require('../../../lib/launcher/sigint-listener')
 
 describe('sigint-listener', function () {
   beforeEach(function () {

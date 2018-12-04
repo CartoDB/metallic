@@ -1,6 +1,6 @@
 const assert = require('assert')
-const LeaderInterface = require('../../../../../src/launcher/cluster/leader/leader-interface')
-const { AbstractClassError, UnimplementedError } = require('../../../../../src/errors')
+const LeaderInterface = require('../../../../../lib/launcher/cluster/leader/leader-interface')
+const { AbstractClassError, UnimplementedError } = require('../../../../../lib/errors')
 
 class Leader extends LeaderInterface {}
 

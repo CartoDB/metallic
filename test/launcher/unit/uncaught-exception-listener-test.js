@@ -1,8 +1,8 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const { ListenerInterface } = require('../../../src/listeners')
-const UncaughtExceptionListener = require('../../../src/launcher/uncaught-exception-listener')
+const { ListenerInterface } = require('../../../lib/listeners')
+const UncaughtExceptionListener = require('../../../lib/launcher/uncaught-exception-listener')
 
 describe('uncaught-exception-listener', function () {
   beforeEach(function () {

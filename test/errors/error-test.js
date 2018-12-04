@@ -1,5 +1,5 @@
 const assert = require('assert')
-const { AbstractClassError, UnplimentedError, ParentClassError, NotReadyError, ExitError } = require('../../src/errors')
+const { AbstractClassError, UnplimentedError, ParentClassError, NotReadyError, ExitError } = require('../../lib/errors')
 
 describe('error', function () {
   it('Unimplemented error', function () {

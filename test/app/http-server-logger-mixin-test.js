@@ -1,8 +1,8 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const { RunnerInterface } = require('../../src/interfaces')
-const HttpServerLoggerMixin = require('../../src/app/http-server-logger-mixin')
-const { LoggerInterface } = require('../../src/logger')
+const { RunnerInterface } = require('../../lib/interfaces')
+const HttpServerLoggerMixin = require('../../lib/app/http-server-logger-mixin')
+const { LoggerInterface } = require('../../lib/logger')
 
 class Logger extends LoggerInterface {}
 class DummyHttpServer extends RunnerInterface {

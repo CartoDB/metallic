@@ -1,6 +1,6 @@
 const assert = require('assert')
-const { RunnerInterface } = require('../../src/interfaces')
-const HttpServerFactory = require('../../src/app/http-server-factory')
+const { RunnerInterface } = require('../../lib/interfaces')
+const HttpServerFactory = require('../../lib/app/http-server-factory')
 
 describe('http-server-factory', function () {
   it('.create() should return a HttpServer instance', function () {

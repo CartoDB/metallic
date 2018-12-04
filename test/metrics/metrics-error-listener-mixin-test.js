@@ -1,10 +1,10 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const MetricsInterface = require('../../src/metrics/metrics-interface')
-const MetricsErrorListenerMixin = require('../../src/metrics/metrics-error-listener-mixin')
-const ErrorListener = require('../../src/metrics/error-listener')
+const MetricsInterface = require('../../lib/metrics/metrics-interface')
+const MetricsErrorListenerMixin = require('../../lib/metrics/metrics-error-listener-mixin')
+const ErrorListener = require('../../lib/metrics/error-listener')
 const EventEmitter = require('events')
-const LoggerInterface = require('../../src/logger')
+const LoggerInterface = require('../../lib/logger')
 
 class DummyMetrics extends MetricsInterface {
   run () {}

@@ -1,7 +1,7 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const Sigusr2Listener = require('../../../../../src/launcher/cluster/leader/sigusr2-listener')
+const Sigusr2Listener = require('../../../../../lib/launcher/cluster/leader/sigusr2-listener')
 
 describe('sigusr2-listener', function () {
   beforeEach(function () {

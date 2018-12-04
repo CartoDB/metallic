@@ -1,6 +1,6 @@
 const assert = require('assert')
-const ClusterInterface = require('../../../../src/launcher/cluster/cluster-interface')
-const { AbstractClassError, UnimplementedError } = require('../../../../src/errors')
+const ClusterInterface = require('../../../../lib/launcher/cluster/cluster-interface')
+const { AbstractClassError, UnimplementedError } = require('../../../../lib/errors')
 
 class Cluster extends ClusterInterface {}
 

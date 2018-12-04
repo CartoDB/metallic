@@ -1,7 +1,7 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const MetricsInterface = require('../../src/metrics/metrics-interface')
-const Metrics = require('../../src/metrics/metrics')
+const MetricsInterface = require('../../lib/metrics/metrics-interface')
+const Metrics = require('../../lib/metrics/metrics')
 const EventEmitter = require('events')
 
 class DummyMetricsProvider extends MetricsInterface {

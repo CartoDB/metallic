@@ -1,4 +1,4 @@
-const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const LauncherInterface = require('../../../lib/launcher/launcher-interface')
 
 module.exports = class DummyLauncher extends LauncherInterface {
   async run () {}

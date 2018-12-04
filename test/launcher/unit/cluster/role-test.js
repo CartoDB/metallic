@@ -1,5 +1,5 @@
 const assert = require('assert')
-const Role = require('../../../../src/launcher/cluster/role')
+const Role = require('../../../../lib/launcher/cluster/role')
 const { LEADER, SERVER } = Role
 
 describe('role', function () {

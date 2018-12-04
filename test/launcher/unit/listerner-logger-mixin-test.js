@@ -1,9 +1,9 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const { ListenerInterface, ListenerAbstract } = require('../../../src/listeners')
-const { LoggerInterface } = require('../../../src/logger')
-const ListenerLoggerMixin = require('../../../src/launcher/listener-logger-mixin')
+const { ListenerInterface, ListenerAbstract } = require('../../../lib/listeners')
+const { LoggerInterface } = require('../../../lib/logger')
+const ListenerLoggerMixin = require('../../../lib/launcher/listener-logger-mixin')
 
 class Listener extends ListenerAbstract {
   constructor ({ emitter }) {

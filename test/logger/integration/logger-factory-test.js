@@ -1,5 +1,5 @@
 const assert = require('assert')
-const LoggerFactory = require('../../../src/logger')
+const LoggerFactory = require('../../../lib/logger')
 const { LoggerInterface } = LoggerFactory
 
 describe('logger-factory', function () {

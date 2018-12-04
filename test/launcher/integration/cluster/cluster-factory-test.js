@@ -1,9 +1,9 @@
 const assert = require('assert')
-const LoggerFactory = require('../../../../src/logger')
-const MetricsFactory = require('../../../../src/metrics')
-const HttpServerFactory = require('../../../../src/app')
-const { RunnerInterface } = require('../../../../src/interfaces')
-const ClusterFactory = require('../../../../src/launcher/cluster')
+const LoggerFactory = require('../../../../lib/logger')
+const MetricsFactory = require('../../../../lib/metrics')
+const HttpServerFactory = require('../../../../lib/app')
+const { RunnerInterface } = require('../../../../lib/interfaces')
+const ClusterFactory = require('../../../../lib/launcher/cluster')
 
 describe('cluster-factory', function () {
   it('.create() should return a Runner instance', function () {

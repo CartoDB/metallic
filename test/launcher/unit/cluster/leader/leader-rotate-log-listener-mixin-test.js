@@ -1,10 +1,10 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const LeaderInterface = require('../../../../../src/launcher/cluster/leader/leader-interface')
+const LeaderInterface = require('../../../../../lib/launcher/cluster/leader/leader-interface')
 const DummyLeader = require('../../../support/dummy-leader')
-const LeaderRotateLogListenerMixin = require('../../../../../src/launcher/cluster/leader/leader-rotate-log-listener-mixin')
-const Sigusr2Listener = require('../../../../../src/launcher/cluster/leader/sigusr2-listener')
+const LeaderRotateLogListenerMixin = require('../../../../../lib/launcher/cluster/leader/leader-rotate-log-listener-mixin')
+const Sigusr2Listener = require('../../../../../lib/launcher/cluster/leader/sigusr2-listener')
 const cluster = require('cluster')
 
 describe('leader-rotate-log-listener-mixin', function () {

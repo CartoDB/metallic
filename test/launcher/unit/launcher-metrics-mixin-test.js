@@ -1,9 +1,9 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const LauncherInterface = require('../../../lib/launcher/launcher-interface')
 const DummyLauncher = require('../support/dummy-launcher')
-const LauncherMetricsMixin = require('../../../src/launcher/launcher-metrics-mixin')
-const { MetricsInterface } = require('../../../src/metrics')
+const LauncherMetricsMixin = require('../../../lib/launcher/launcher-metrics-mixin')
+const { MetricsInterface } = require('../../../lib/metrics')
 
 class Metrics extends MetricsInterface {}
 

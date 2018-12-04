@@ -1,4 +1,4 @@
-const { ListenerAbstract } = require('../../../src/listeners')
+const { ListenerAbstract } = require('../../../lib/listeners')
 
 module.exports = class DummyListener extends ListenerAbstract {
   constructor (emitter) {

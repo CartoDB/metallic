@@ -1,7 +1,7 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const ServerExitListener = require('../../../../../src/launcher/cluster/leader/server-exit-listener')
+const ServerExitListener = require('../../../../../lib/launcher/cluster/leader/server-exit-listener')
 
 describe('server-exit-listener', function () {
   beforeEach(function () {

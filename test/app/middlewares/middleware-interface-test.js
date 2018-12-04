@@ -1,6 +1,6 @@
 const assert = require('assert')
-const MiddlewareInterface = require('../../../src/app/middlewares/middleware-interface')
-const { AbstractClassError, UnimplementedError } = require('../../../src/errors')
+const MiddlewareInterface = require('../../../lib/app/middlewares/middleware-interface')
+const { AbstractClassError, UnimplementedError } = require('../../../lib/errors')
 
 class Middleware extends MiddlewareInterface {}
 

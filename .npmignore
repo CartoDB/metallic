@@ -1,6 +1,6 @@
 benchmark
 coverage
-src
+example
 test
 *.log
 .*

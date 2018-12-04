@@ -1,10 +1,10 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const LauncherInterface = require('../../../lib/launcher/launcher-interface')
 const DummyLauncher = require('../support/dummy-launcher')
-const LauncherUncaughtExceptionListenerMixin = require('../../../src/launcher/launcher-uncaught-exception-listener-mixin')
-const UncaughtExceptionListener = require('../../../src/launcher/uncaught-exception-listener')
+const LauncherUncaughtExceptionListenerMixin = require('../../../lib/launcher/launcher-uncaught-exception-listener-mixin')
+const UncaughtExceptionListener = require('../../../lib/launcher/uncaught-exception-listener')
 
 describe('launcher-uncaught-exception-listener-mixin', function () {
   beforeEach(function () {

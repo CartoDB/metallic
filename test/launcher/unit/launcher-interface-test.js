@@ -1,6 +1,6 @@
 const assert = require('assert')
-const LauncherInterface = require('../../../src/launcher/launcher-interface')
-const { AbstractClassError, UnimplementedError } = require('../../../src/errors')
+const LauncherInterface = require('../../../lib/launcher/launcher-interface')
+const { AbstractClassError, UnimplementedError } = require('../../../lib/errors')
 
 class Launcher extends LauncherInterface {}
 

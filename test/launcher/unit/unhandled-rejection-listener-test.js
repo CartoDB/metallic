@@ -1,9 +1,9 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const { LoggerInterface } = require('../../../src/logger')
-const { ListenerInterface } = require('../../../src/listeners')
-const UnhandledRejectionListener = require('../../../src/launcher/unhandled-rejection-listener')
+const { LoggerInterface } = require('../../../lib/logger')
+const { ListenerInterface } = require('../../../lib/listeners')
+const UnhandledRejectionListener = require('../../../lib/launcher/unhandled-rejection-listener')
 
 class Logger extends LoggerInterface {}
 

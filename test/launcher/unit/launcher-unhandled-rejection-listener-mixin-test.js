@@ -1,11 +1,11 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const { LoggerInterface } = require('../../../src/logger')
-const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const { LoggerInterface } = require('../../../lib/logger')
+const LauncherInterface = require('../../../lib/launcher/launcher-interface')
 const DummyLauncher = require('../support/dummy-launcher')
-const LauncherUnhandledRejectionListenerMixin = require('../../../src/launcher/launcher-unhandled-rejection-listener-mixin')
-const UnhandledRejectionListener = require('../../../src/launcher/unhandled-rejection-listener')
+const LauncherUnhandledRejectionListenerMixin = require('../../../lib/launcher/launcher-unhandled-rejection-listener-mixin')
+const UnhandledRejectionListener = require('../../../lib/launcher/unhandled-rejection-listener')
 
 class Logger extends LoggerInterface {}
 

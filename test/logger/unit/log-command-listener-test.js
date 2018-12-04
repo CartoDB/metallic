@@ -1,8 +1,8 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const { ListenerInterface } = require('../../../src/listeners')
-const LogCommandListener = require('../../../src/logger/log-command-listener')
+const { ListenerInterface } = require('../../../lib/listeners')
+const LogCommandListener = require('../../../lib/logger/log-command-listener')
 
 describe('log-command-listener', function () {
   beforeEach(function () {

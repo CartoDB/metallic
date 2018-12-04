@@ -1,8 +1,8 @@
 const assert = require('assert')
 const sinon = require('sinon')
 const EventEmitter = require('events')
-const Leader = require('../../../../../src/launcher/cluster/leader/leader')
-const { LEADER } = require('../../../../../src/launcher/cluster/role')
+const Leader = require('../../../../../lib/launcher/cluster/leader/leader')
+const { LEADER } = require('../../../../../lib/launcher/cluster/role')
 
 class Cluster extends EventEmitter {
   fork () {}

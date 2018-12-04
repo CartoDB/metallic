@@ -1,6 +1,6 @@
 const assert = require('assert')
-const { ListenerInterface } = require('../../src/listeners')
-const { UnimplementedMethod } = require('../../src/errors')
+const { ListenerInterface } = require('../../lib/listeners')
+const { UnimplementedMethod } = require('../../lib/errors')
 
 class Listener extends ListenerInterface {}
 

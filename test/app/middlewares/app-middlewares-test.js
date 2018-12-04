@@ -1,7 +1,7 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const AppMiddlewares = require('../../../src/app/middlewares/app-middlewares')
-const MiddlewareInterface = require('../../../src/app/middlewares/middleware-interface')
+const AppMiddlewares = require('../../../lib/app/middlewares/app-middlewares')
+const MiddlewareInterface = require('../../../lib/app/middlewares/middleware-interface')
 
 class Middleware extends MiddlewareInterface {
   regist () {}

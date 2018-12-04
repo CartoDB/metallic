@@ -1,8 +1,8 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const { RunnerInterface } = require('../../../../../src/interfaces')
-const Server = require('../../../../../src/launcher/cluster/server/server')
-const { SERVER } = require('../../../../../src/launcher/cluster/role')
+const { RunnerInterface } = require('../../../../../lib/interfaces')
+const Server = require('../../../../../lib/launcher/cluster/server/server')
+const { SERVER } = require('../../../../../lib/launcher/cluster/role')
 
 class HttpServer extends RunnerInterface {}
 

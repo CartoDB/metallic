@@ -1,6 +1,6 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const { ListenerInterface, Listeners } = require('../../src/listeners')
+const { ListenerInterface, Listeners } = require('../../lib/listeners')
 
 class Listener extends ListenerInterface {}
 

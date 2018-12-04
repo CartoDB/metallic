@@ -1,6 +1,6 @@
 const assert = require('assert')
-const { LoggerInterface } = require('../../../src/logger')
-const { AbstractClassError, UnimplementedError } = require('../../../src/errors')
+const { LoggerInterface } = require('../../../lib/logger')
+const { AbstractClassError, UnimplementedError } = require('../../../lib/errors')
 
 class Logger extends LoggerInterface {}
 

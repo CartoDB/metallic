@@ -1,8 +1,8 @@
 const assert = require('assert')
 const sinon = require('sinon')
-const MetricsInterface = require('../../src/metrics/metrics-interface')
-const MetricsLoggerMixin = require('../../src/metrics/metrics-logger-mixin')
-const { LoggerInterface } = require('../../src/logger')
+const MetricsInterface = require('../../lib/metrics/metrics-interface')
+const MetricsLoggerMixin = require('../../lib/metrics/metrics-logger-mixin')
+const { LoggerInterface } = require('../../lib/logger')
 
 class DummyMetrics extends MetricsInterface {
   run () {}

@@ -1,4 +1,4 @@
-const LoggerInterface = require('../../../src/logger/logger-interface')
+const LoggerInterface = require('../../../lib/logger/logger-interface')
 
 module.exports = class DummyLogger extends LoggerInterface {
   async run () {}

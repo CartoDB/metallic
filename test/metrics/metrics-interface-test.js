@@ -1,6 +1,6 @@
 const assert = require('assert')
-const MetricsInterface = require('../../src/metrics/metrics-interface')
-const { UnimplementedMethod } = require('../../src/errors')
+const MetricsInterface = require('../../lib/metrics/metrics-interface')
+const { UnimplementedMethod } = require('../../lib/errors')
 
 class Metrics extends MetricsInterface {}
 

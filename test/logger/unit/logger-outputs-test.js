@@ -1,6 +1,6 @@
 const assert = require('assert')
-const LoggerOutputs = require('../../../src/logger/outputs/logger-outputs')
-const LoggerOutputInterface = require('../../../src/logger/outputs/logger-output-interface')
+const LoggerOutputs = require('../../../lib/logger/outputs/logger-outputs')
+const LoggerOutputInterface = require('../../../lib/logger/outputs/logger-output-interface')
 
 class LoggerOutput extends LoggerOutputInterface {
   constructor (available = true) {
