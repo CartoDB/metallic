@@ -3,7 +3,7 @@ import sinon from 'sinon'
 import EventEmitter from 'events'
 import { ListenerInterface } from '../../src/listeners'
 import { RunnerInterface } from '../../src/interfaces'
-import { LoggerInterface } from 'metallic-logger'
+import { LoggerInterface } from '../../src/logger'
 import { NotReadyError } from '../../src/errors'
 import HttpServer from '../../src/app/http-server'
 

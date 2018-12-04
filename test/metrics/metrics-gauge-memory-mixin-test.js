@@ -2,7 +2,7 @@ import assert from 'assert'
 import sinon from 'sinon'
 import MetricsInterface from '../../src/metrics/metrics-interface'
 import MetricsGaugeMemoryMixin from '../../src/metrics/metrics-gauge-memory-mixin'
-import LoggerInterface from 'metallic-logger'
+import LoggerInterface from '../../src/logger'
 
 class DummyMetrics extends MetricsInterface {
   run () {}

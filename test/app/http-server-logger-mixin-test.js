@@ -2,7 +2,7 @@ import assert from 'assert'
 import sinon from 'sinon'
 import { RunnerInterface } from '../../src/interfaces'
 import HttpServerLoggerMixin from '../../src/app/http-server-logger-mixin'
-import { LoggerInterface } from 'metallic-logger'
+import { LoggerInterface } from '../../src/logger'
 
 class Logger extends LoggerInterface {}
 class DummyHttpServer extends RunnerInterface {

@@ -24,12 +24,14 @@
     "test": "test"
   },
   "dependencies": {
+    "bunyan": "^1.8.12",
     "es6-error": "^4.1.1",
     "koa": "^2.6.2",
     "meow": "^4.0.0",
     "metallic-logger": "^0.11.1",
     "node-statsd": "^0.1.1",
     "node-uuid": "^1.4.8",
+    "read-pkg-up": "^4.0.0",
     "source-map-support": "^0.5.3"
   },
   "scripts": {

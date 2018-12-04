@@ -3,7 +3,7 @@ import sinon from 'sinon'
 import LauncherInterface from '../../../src/launcher/launcher-interface'
 import DummyLauncher from '../support/dummy-launcher'
 import LauncherLoggerMixin from '../../../src/launcher/launcher-logger-mixin'
-import { LoggerInterface } from 'metallic-logger'
+import { LoggerInterface } from '../../../src/logger'
 
 class Logger extends LoggerInterface {}
 

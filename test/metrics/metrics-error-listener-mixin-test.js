@@ -4,7 +4,7 @@ import MetricsInterface from '../../src/metrics/metrics-interface'
 import MetricsErrorListenerMixin from '../../src/metrics/metrics-error-listener-mixin'
 import ErrorListener from '../../src/metrics/error-listener'
 import EventEmitter from 'events'
-import LoggerInterface from 'metallic-logger'
+import LoggerInterface from '../../src/logger'
 
 class DummyMetrics extends MetricsInterface {
   run () {}

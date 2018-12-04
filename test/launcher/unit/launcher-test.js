@@ -4,7 +4,7 @@ import ClusterInterface from '../../../src/launcher/cluster/cluster-interface'
 import LauncherInterface from '../../../src/launcher/launcher-interface'
 import Launcher from '../../../src/launcher/launcher'
 import { MetricsInterface } from '../../../src/metrics'
-import { LoggerInterface } from 'metallic-logger'
+import { LoggerInterface } from '../../../src/logger'
 
 class Target extends ClusterInterface {
   get role () {

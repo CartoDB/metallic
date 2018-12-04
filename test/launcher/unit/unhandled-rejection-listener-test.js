@@ -1,7 +1,7 @@
 import assert from 'assert'
 import sinon from 'sinon'
 import EventEmitter from 'events'
-import { LoggerInterface } from 'metallic-logger'
+import { LoggerInterface } from '../../../src/logger'
 import { ListenerInterface } from '../../../src/listeners'
 import UnhandledRejectionListener from '../../../src/launcher/unhandled-rejection-listener'
 

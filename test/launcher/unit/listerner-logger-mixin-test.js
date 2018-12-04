@@ -2,7 +2,7 @@ import assert from 'assert'
 import sinon from 'sinon'
 import EventEmitter from 'events'
 import { ListenerInterface, ListenerAbstract } from '../../../src/listeners'
-import { LoggerInterface } from 'metallic-logger'
+import { LoggerInterface } from '../../../src/logger'
 import ListenerLoggerMixin from '../../../src/launcher/listener-logger-mixin'
 
 class Listener extends ListenerAbstract {
