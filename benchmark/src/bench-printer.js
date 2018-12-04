@@ -1,4 +1,4 @@
-import pkg from '../../../package.json'
+import pkg from '../../package.json'
 import prependFile from 'prepend-file'
 
 const markdown = ctx => `## ${ctx.name} ${ctx.version}\n${ctx.platform} / node ${ctx.node} / v8 ${ctx.v8} (${ctx.date})\n\`\`\`\n${ctx.results}\`\`\`\n`

@@ -1,4 +1,4 @@
-import Metallic, { SERVER } from '../../../lib'
+import Metallic, { SERVER } from '../../lib'
 
 export default class HelloWorld {
   static create (options) {

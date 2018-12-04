@@ -1,5 +1,5 @@
 import { STATUS_CODES } from 'http'
-import Metallic, { SERVER } from '../../../lib'
+import Metallic, { SERVER } from '../../lib'
 
 export default class Forbidden {
   static create (options) {

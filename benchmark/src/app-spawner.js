@@ -10,6 +10,7 @@ export default class AppSpawner {
       const args = [`${__dirname}/app.js`, ...this.args]
 
       this.app = spawn('node', args, {
+        // Use "stdio: [ 'inherit', 'inherit', 'inherit', 'ipc' ]" for debugging
         stdio: [ 'ignore', 'ignore', 'ignore', 'ipc' ]
       })
 

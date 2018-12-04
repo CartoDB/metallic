@@ -1,4 +1,4 @@
-import Metallic, { SERVER } from '../../../lib'
+import Metallic, { SERVER } from '../../lib'
 
 export default class Negotiation {
   static create (options) {
