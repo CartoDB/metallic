@@ -1,7 +1,7 @@
 import assert from 'assert'
 import sinon from 'sinon'
 import EventEmitter from 'events'
-import { ListenerInterface } from 'metallic-listeners'
+import { ListenerInterface } from '../../src/listeners'
 import { RunnerInterface } from '../../src/interfaces'
 import { LoggerInterface } from 'metallic-logger'
 import { NotReadyError } from '../../src/errors'

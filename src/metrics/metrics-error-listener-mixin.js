@@ -1,4 +1,4 @@
-import { ListenerInterface } from 'metallic-listeners'
+import { ListenerInterface } from '../listeners'
 import { ParentClassError } from '../errors'
 
 export default class LoggerSighupListenerMixin {
