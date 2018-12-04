@@ -27,12 +27,11 @@
     "bunyan": "^1.8.12",
     "es6-error": "^4.1.1",
     "koa": "^2.6.2",
-    "meow": "^4.0.0",
-    "metallic-logger": "^0.11.1",
+    "meow": "^5.0.0",
     "node-statsd": "^0.1.1",
     "node-uuid": "^1.4.8",
     "read-pkg-up": "^4.0.0",
-    "source-map-support": "^0.5.3"
+    "source-map-support": "^0.5.9"
   },
   "scripts": {
     "prebuild": "npm run clean",
@@ -50,15 +49,15 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-register": "^6.26.0",
-    "mocha": "^5.0.1",
-    "node-fetch": "^2.0.0",
-    "nyc": "^11.4.1",
+    "mocha": "^5.2.0",
+    "node-fetch": "^2.3.0",
+    "nyc": "^13.1.0",
     "rimraf": "^2.6.2",
-    "sinon": "^4.4.2",
-    "standard": "^11.0.0"
+    "sinon": "^7.1.1",
+    "standard": "^12.0.1"
   },
   "standard": {
     "env": {
