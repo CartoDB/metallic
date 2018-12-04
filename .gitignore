@@ -38,3 +38,4 @@ jspm_packages
 
 # ES6 -> ES5 transpiled modules
 lib
+benchmark/lib
