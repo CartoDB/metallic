@@ -1,4 +1,4 @@
-import { FactoryInterface } from 'metallic-interfaces'
+import { FactoryInterface } from '../../interfaces'
 import ServerFactory from './server'
 import LeaderFactory from './leader'
 

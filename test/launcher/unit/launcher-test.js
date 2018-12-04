@@ -3,7 +3,7 @@ import sinon from 'sinon'
 import ClusterInterface from '../../../src/launcher/cluster/cluster-interface'
 import LauncherInterface from '../../../src/launcher/launcher-interface'
 import Launcher from '../../../src/launcher/launcher'
-import { MetricsInterface } from 'metallic-metrics'
+import { MetricsInterface } from '../../../src/metrics'
 import { LoggerInterface } from 'metallic-logger'
 
 class Target extends ClusterInterface {

@@ -1,4 +1,4 @@
-import { FactoryInterface } from 'metallic-interfaces'
+import { FactoryInterface } from '../../../interfaces'
 import Server from './server'
 
 export default class ServerFactory extends FactoryInterface {

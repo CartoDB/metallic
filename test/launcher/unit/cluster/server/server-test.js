@@ -1,6 +1,6 @@
 import assert from 'assert'
 import sinon from 'sinon'
-import { RunnerInterface } from 'metallic-interfaces'
+import { RunnerInterface } from '../../../../../src/interfaces'
 import Server from '../../../../../src/launcher/cluster/server/server'
 import { SERVER } from '../../../../../src/launcher/cluster/role'
 

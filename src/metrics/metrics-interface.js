@@ -1,5 +1,5 @@
-import { AbstractClassError, UnimplementedError } from 'metallic-errors'
-import { RunnerInterface } from 'metallic-interfaces'
+import { AbstractClassError, UnimplementedError } from '../errors'
+import { RunnerInterface } from '../interfaces'
 
 export default class MetricsInterface extends RunnerInterface {
   constructor () {

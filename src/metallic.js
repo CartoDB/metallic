@@ -1,7 +1,7 @@
 import config from './config'
 import MetricsFactory, { MetricsInterface } from './metrics'
 import LoggerFactory, { LoggerInterface } from 'metallic-logger'
-import HttpServerFactory from 'metallic-app'
+import HttpServerFactory from './app'
 import LauncherFactory from './launcher'
 
 export default class Metallic {

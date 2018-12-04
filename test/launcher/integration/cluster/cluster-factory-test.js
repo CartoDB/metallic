@@ -1,8 +1,8 @@
 import assert from 'assert'
 import LoggerFactory from 'metallic-logger'
-import MetricsFactory from 'metallic-metrics'
-import HttpServerFactory from 'metallic-app'
-import { RunnerInterface } from 'metallic-interfaces'
+import MetricsFactory from '../../../../src/metrics'
+import HttpServerFactory from '../../../../src/app'
+import { RunnerInterface } from '../../../../src/interfaces'
 import ClusterFactory from '../../../../src/launcher/cluster'
 
 describe('cluster-factory', function () {

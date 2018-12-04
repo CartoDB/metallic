@@ -1,5 +1,5 @@
 import { AbstractClassError } from '../errors'
-import { RunnerInterface } from 'metallic-interfaces'
+import { RunnerInterface } from '../interfaces'
 
 export default class LauncherInterface extends RunnerInterface {
   constructor () {

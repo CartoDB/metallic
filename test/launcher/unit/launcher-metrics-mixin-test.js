@@ -3,7 +3,7 @@ import sinon from 'sinon'
 import LauncherInterface from '../../../src/launcher/launcher-interface'
 import DummyLauncher from '../support/dummy-launcher'
 import LauncherMetricsMixin from '../../../src/launcher/launcher-metrics-mixin'
-import { MetricsInterface } from 'metallic-metrics'
+import { MetricsInterface } from '../../../src/metrics'
 
 class Metrics extends MetricsInterface {}
 

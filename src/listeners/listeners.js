@@ -1,4 +1,4 @@
-import { ParentClassError } from 'metallic-errors'
+import { ParentClassError } from '../errors'
 import ListenerInterface from './listener-interface'
 
 export default class Listeners extends Set {

@@ -1,4 +1,4 @@
-import { FactoryInterface } from 'metallic-interfaces'
+import { FactoryInterface } from '../interfaces'
 import { default as ClusterFactory } from './cluster'
 import { Listeners } from '../listeners'
 import ListenerLoggerMixin from './listener-logger-mixin'

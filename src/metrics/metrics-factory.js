@@ -1,4 +1,4 @@
-import { FactoryInterface } from 'metallic-interfaces'
+import { FactoryInterface } from '../interfaces'
 import ErrorListener from './error-listener'
 import MetricsErrorListenerMixin from './metrics-error-listener-mixin'
 import Metrics from './metrics'

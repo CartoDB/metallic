@@ -1,4 +1,4 @@
-import { AbstractClassError, UnimplementedError } from 'metallic-errors'
+import { AbstractClassError, UnimplementedError } from '../errors'
 
 export default class ListenerInterface {
   constructor () {

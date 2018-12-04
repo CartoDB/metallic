@@ -1,5 +1,5 @@
 import ListenerInterface from './listener-interface'
-import { AbstractClassError } from 'metallic-errors'
+import { AbstractClassError } from '../errors'
 
 export default class ListenerAbstract extends ListenerInterface {
   constructor (emitter, event) {

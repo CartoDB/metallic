@@ -1,7 +1,7 @@
 import assert from 'assert'
 import LoggerFactory from 'metallic-logger'
-import MetricsFactory from 'metallic-metrics'
-import { RunnerInterface } from 'metallic-interfaces'
+import MetricsFactory from '../../../../../src/metrics'
+import { RunnerInterface } from '../../../../../src/interfaces'
 import ServerFactory from '../../../../../src/launcher/cluster/leader'
 
 describe('server-factory', function () {

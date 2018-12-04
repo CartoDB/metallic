@@ -1,6 +1,6 @@
 import cluster from 'cluster'
 import os from 'os'
-import { FactoryInterface } from 'metallic-interfaces'
+import { FactoryInterface } from '../../../interfaces'
 import ListenerLoggerMixin from '../../listener-logger-mixin'
 import Sigusr2Listener from './sigusr2-listener'
 import SighupListener from './sighup-listener'

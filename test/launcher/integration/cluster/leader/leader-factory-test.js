@@ -1,6 +1,6 @@
 import assert from 'assert'
-import { RunnerInterface } from 'metallic-interfaces'
-import MetricsFactory from 'metallic-metrics'
+import { RunnerInterface } from '../../../../../src/interfaces'
+import MetricsFactory from '../../../../../src/metrics'
 import LoggerFactory from 'metallic-logger'
 import LeaderFactory from '../../../../../src/launcher/cluster/leader'
 
