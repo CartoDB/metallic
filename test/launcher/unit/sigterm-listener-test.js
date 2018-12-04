@@ -1,8 +1,8 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import { ListenerInterface } from '../../../src/listeners'
-import SigtermListener from '../../../src/launcher/sigterm-listener'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const { ListenerInterface } = require('../../../src/listeners')
+const SigtermListener = require('../../../src/launcher/sigterm-listener')
 
 describe('sigterm-listener', function () {
   beforeEach(function () {

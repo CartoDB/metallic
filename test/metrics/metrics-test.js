@@ -1,8 +1,8 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import MetricsInterface from '../../src/metrics/metrics-interface'
-import Metrics from '../../src/metrics/metrics'
-import EventEmitter from 'events'
+const assert = require('assert')
+const sinon = require('sinon')
+const MetricsInterface = require('../../src/metrics/metrics-interface')
+const Metrics = require('../../src/metrics/metrics')
+const EventEmitter = require('events')
 
 class DummyMetricsProvider extends MetricsInterface {
   constructor () {

@@ -1,8 +1,8 @@
-import parseArguments from './argv/parse'
-import { Role } from '../launcher'
-import defaults from './defaults'
+const parseArguments = require('./argv/parse')
+const { Role } = require('../launcher')
+const defaults = require('./defaults')
 
-export default function config (clientOptions = {}) {
+module.exports = function config (clientOptions = {}) {
   const argumentOptions = parseArguments(clientOptions.arguments)
   const options = { ...defaults, ...clientOptions, ...argumentOptions }
   options.cluster.role = Role.getName(options.cluster.enabled)

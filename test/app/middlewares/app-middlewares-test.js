@@ -1,7 +1,7 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import AppMiddlewares from '../../../src/app/middlewares/app-middlewares'
-import MiddlewareInterface from '../../../src/app/middlewares/middleware-interface'
+const assert = require('assert')
+const sinon = require('sinon')
+const AppMiddlewares = require('../../../src/app/middlewares/app-middlewares')
+const MiddlewareInterface = require('../../../src/app/middlewares/middleware-interface')
 
 class Middleware extends MiddlewareInterface {
   regist () {}

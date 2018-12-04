@@ -1,9 +1,9 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import { LoggerInterface } from '../../../src/logger'
-import { ListenerInterface } from '../../../src/listeners'
-import UnhandledRejectionListener from '../../../src/launcher/unhandled-rejection-listener'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const { LoggerInterface } = require('../../../src/logger')
+const { ListenerInterface } = require('../../../src/listeners')
+const UnhandledRejectionListener = require('../../../src/launcher/unhandled-rejection-listener')
 
 class Logger extends LoggerInterface {}
 

@@ -1,6 +1,6 @@
-import Middleware from './middleware'
+const Middleware = require('./middleware')
 
-export default class MetricsMiddleware extends Middleware {
+module.exports = class MetricsMiddleware extends Middleware {
   constructor ({ metrics }) {
     super()
     this.metrics = metrics

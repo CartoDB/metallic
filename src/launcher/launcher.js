@@ -1,6 +1,6 @@
-import LauncherInterface from './launcher-interface'
+const LauncherInterface = require('./launcher-interface')
 
-export default class Launcher extends LauncherInterface {
+module.exports = class Launcher extends LauncherInterface {
   constructor ({ target }) {
     super()
     this.target = target

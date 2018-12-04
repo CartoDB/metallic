@@ -1,5 +1,5 @@
-import meow from 'meow'
-import { HelloWorld, Forbidden, Negotiation } from '../../examples/lib'
+const meow = require('meow')
+const { HelloWorld, Forbidden, Negotiation } = require('../../examples/lib')
 
 if (typeof process.send !== 'function') {
   throw new Error('This module must be spawned as subprocess with IPC communication channel')

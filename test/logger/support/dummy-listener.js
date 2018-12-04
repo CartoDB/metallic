@@ -1,6 +1,6 @@
-import { ListenerAbstract } from '../../../src/listeners'
+const { ListenerAbstract } = require('../../../src/listeners')
 
-export default class DummyListener extends ListenerAbstract {
+module.exports = class DummyListener extends ListenerAbstract {
   constructor (emitter) {
     super(emitter, 'message')
     this.command = 'wadus'

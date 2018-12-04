@@ -1,7 +1,7 @@
-import { ParentClassError } from '../errors'
-import ListenerInterface from './listener-interface'
+const { ParentClassError } = require('../errors')
+const ListenerInterface = require('./listener-interface')
 
-export default class Listeners extends Set {
+module.exports = class Listeners extends Set {
   add (listener) {
     if (!(listener instanceof ListenerInterface)) {
       throw new ParentClassError(listener.constructor.name, ListenerInterface.name)

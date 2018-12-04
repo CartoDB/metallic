@@ -1,7 +1,7 @@
-import meow from 'meow'
-import AppSpawner from './app-spawner'
-import WrkSpawner from './wrk-spawner'
-import BenchPrinter from './bench-printer'
+const meow = require('meow')
+const AppSpawner = require('./app-spawner')
+const WrkSpawner = require('./wrk-spawner')
+const BenchPrinter = require('./bench-printer')
 
 const help = `
   Usage:

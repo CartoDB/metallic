@@ -1,4 +1,4 @@
-export default class MetricsGaugeMemoryMixin {
+module.exports = class MetricsGaugeMemoryMixin {
   static mix (superclass) {
     return class extends superclass {
       constructor ({ interval = 0, logger }) {

@@ -1,4 +1,4 @@
-export default function helpInfo (customHelp) {
+module.exports = function helpInfo (customHelp) {
   const help = `
     Usage:
       $ npm start [-- <options>]

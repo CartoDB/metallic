@@ -1,6 +1,6 @@
-import { AbstractClassError, UnimplementedError } from '../errors'
+const { AbstractClassError, UnimplementedError } = require('../errors')
 
-export default class ListenerInterface {
+module.exports = class ListenerInterface {
   constructor () {
     if (new.target === ListenerInterface) {
       throw new AbstractClassError(ListenerInterface.name)

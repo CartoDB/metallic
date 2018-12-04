@@ -1,6 +1,6 @@
-import assert from 'assert'
-import LeaderInterface from '../../../../../src/launcher/cluster/leader/leader-interface'
-import { AbstractClassError, UnimplementedError } from '../../../../../src/errors'
+const assert = require('assert')
+const LeaderInterface = require('../../../../../src/launcher/cluster/leader/leader-interface')
+const { AbstractClassError, UnimplementedError } = require('../../../../../src/errors')
 
 class Leader extends LeaderInterface {}
 

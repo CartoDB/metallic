@@ -1,1 +1,3 @@
-export { default } from './server-factory'
+const ServerFactory = require('./server-factory')
+
+module.exports = ServerFactory

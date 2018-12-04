@@ -1,11 +1,11 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import LeaderInterface from '../../../../../src/launcher/cluster/leader/leader-interface'
-import DummyLeader from '../../../support/dummy-leader'
-import LeaderRotateLogListenerMixin from '../../../../../src/launcher/cluster/leader/leader-rotate-log-listener-mixin'
-import Sigusr2Listener from '../../../../../src/launcher/cluster/leader/sigusr2-listener'
-import cluster from 'cluster'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const LeaderInterface = require('../../../../../src/launcher/cluster/leader/leader-interface')
+const DummyLeader = require('../../../support/dummy-leader')
+const LeaderRotateLogListenerMixin = require('../../../../../src/launcher/cluster/leader/leader-rotate-log-listener-mixin')
+const Sigusr2Listener = require('../../../../../src/launcher/cluster/leader/sigusr2-listener')
+const cluster = require('cluster')
 
 describe('leader-rotate-log-listener-mixin', function () {
   beforeEach(function () {

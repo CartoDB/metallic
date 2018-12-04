@@ -1,2 +1,6 @@
-export { default } from './metrics-factory'
-export { default as MetricsInterface } from './metrics-interface'
+const MetricsFactory = require('./metrics-factory')
+const MetricsInterface = require('./metrics-interface')
+
+MetricsFactory.MetricsInterface = MetricsInterface
+
+module.exports = MetricsFactory

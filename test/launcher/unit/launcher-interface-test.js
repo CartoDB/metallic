@@ -1,6 +1,6 @@
-import assert from 'assert'
-import LauncherInterface from '../../../src/launcher/launcher-interface'
-import { AbstractClassError, UnimplementedError } from '../../../src/errors'
+const assert = require('assert')
+const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const { AbstractClassError, UnimplementedError } = require('../../../src/errors')
 
 class Launcher extends LauncherInterface {}
 

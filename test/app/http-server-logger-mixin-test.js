@@ -1,8 +1,8 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import { RunnerInterface } from '../../src/interfaces'
-import HttpServerLoggerMixin from '../../src/app/http-server-logger-mixin'
-import { LoggerInterface } from '../../src/logger'
+const assert = require('assert')
+const sinon = require('sinon')
+const { RunnerInterface } = require('../../src/interfaces')
+const HttpServerLoggerMixin = require('../../src/app/http-server-logger-mixin')
+const { LoggerInterface } = require('../../src/logger')
 
 class Logger extends LoggerInterface {}
 class DummyHttpServer extends RunnerInterface {

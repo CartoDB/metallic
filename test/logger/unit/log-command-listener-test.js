@@ -1,8 +1,8 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import { ListenerInterface } from '../../../src/listeners'
-import LogCommandListener from '../../../src/logger/log-command-listener'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const { ListenerInterface } = require('../../../src/listeners')
+const LogCommandListener = require('../../../src/logger/log-command-listener')
 
 describe('log-command-listener', function () {
   beforeEach(function () {

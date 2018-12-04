@@ -1,7 +1,7 @@
-import path from 'path'
-import defaults from './defaults'
+const path = require('path')
+const defaults = require('./defaults')
 
-export default function config (clientOptions = {}) {
+module.exports = function config (clientOptions = {}) {
   const options = { ...defaults, ...clientOptions }
 
   options.path = clientOptions.path

@@ -1,6 +1,6 @@
-import { AbstractClassError, UnimplementedError } from '../errors'
+const { AbstractClassError, UnimplementedError } = require('../errors')
 
-export default class FactoryInterface {
+module.exports = class FactoryInterface {
   constructor () {
     if (new.target === FactoryInterface) {
       throw new AbstractClassError(FactoryInterface.name)

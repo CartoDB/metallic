@@ -1,10 +1,10 @@
-import { isMaster } from 'cluster'
-import { AbstractClassError } from '../../errors'
+const { isMaster } = require('cluster')
+const { AbstractClassError } = require('../../errors')
 
-export const LEADER = Symbol('leader')
-export const SERVER = Symbol('server')
+const LEADER = Symbol('leader')
+const SERVER = Symbol('server')
 
-export default class Role {
+class Role {
   constructor () {
     throw new AbstractClassError(Role.name)
   }
@@ -25,3 +25,8 @@ export default class Role {
     return this.isLeader(clusterOn) ? 'leader' : 'server'
   }
 }
+
+Role.LEADER = LEADER
+Role.SERVER = SERVER
+
+module.exports = Role

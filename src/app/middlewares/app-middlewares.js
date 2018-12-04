@@ -1,7 +1,7 @@
-import MiddlewareInterface from './middleware-interface'
-import { ParentClassError } from '../../errors'
+const MiddlewareInterface = require('./middleware-interface')
+const { ParentClassError } = require('../../errors')
 
-export default class AppMiddlewares extends Set {
+module.exports = class AppMiddlewares extends Set {
   add (middleware) {
     if (!(middleware instanceof MiddlewareInterface)) {
       throw new ParentClassError(middleware.constructor.name, MiddlewareInterface.name)

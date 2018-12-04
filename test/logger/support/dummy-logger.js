@@ -1,6 +1,6 @@
-import LoggerInterface from '../../../src/logger/logger-interface'
+const LoggerInterface = require('../../../src/logger/logger-interface')
 
-export default class DummyLogger extends LoggerInterface {
+module.exports = class DummyLogger extends LoggerInterface {
   async run () {}
   async close () {}
   reopenFileStreams () {}

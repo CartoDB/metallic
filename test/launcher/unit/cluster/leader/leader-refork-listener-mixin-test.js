@@ -1,11 +1,11 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import LeaderInterface from '../../../../../src/launcher/cluster/leader/leader-interface'
-import DummyLeader from '../../../support/dummy-leader'
-import LeaderReforkListenerMixin from '../../../../../src/launcher/cluster/leader/leader-refork-listener-mixin'
-import ServerExitListener from '../../../../../src/launcher/cluster/leader/server-exit-listener'
-import cluster from 'cluster'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const LeaderInterface = require('../../../../../src/launcher/cluster/leader/leader-interface')
+const DummyLeader = require('../../../support/dummy-leader')
+const LeaderReforkListenerMixin = require('../../../../../src/launcher/cluster/leader/leader-refork-listener-mixin')
+const ServerExitListener = require('../../../../../src/launcher/cluster/leader/server-exit-listener')
+const cluster = require('cluster')
 
 describe('leader-refork-listener-mixin', function () {
   beforeEach(function () {

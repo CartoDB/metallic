@@ -1,3 +1,5 @@
-export { default as Listeners } from './listeners'
-export { default as ListenerAbstract } from './listener-abstract'
-export { default as ListenerInterface } from './listener-interface'
+const Listeners = require('./listeners')
+const ListenerAbstract = require('./listener-abstract')
+const ListenerInterface = require('./listener-interface')
+
+module.exports = { Listeners, ListenerAbstract, ListenerInterface }

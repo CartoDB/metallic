@@ -1,8 +1,8 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import MetricsInterface from '../../src/metrics/metrics-interface'
-import MetricsLoggerMixin from '../../src/metrics/metrics-logger-mixin'
-import { LoggerInterface } from '../../src/logger'
+const assert = require('assert')
+const sinon = require('sinon')
+const MetricsInterface = require('../../src/metrics/metrics-interface')
+const MetricsLoggerMixin = require('../../src/metrics/metrics-logger-mixin')
+const { LoggerInterface } = require('../../src/logger')
 
 class DummyMetrics extends MetricsInterface {
   run () {}

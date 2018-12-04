@@ -1,6 +1,6 @@
-import MetricsInterface from './metrics-interface'
+const MetricsInterface = require('./metrics-interface')
 
-export default class Metrics extends MetricsInterface {
+module.exports = class Metrics extends MetricsInterface {
   constructor ({ provider }) {
     super()
     this.provider = provider

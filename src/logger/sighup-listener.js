@@ -1,6 +1,6 @@
-import { ListenerAbstract } from '../listeners'
+const { ListenerAbstract } = require('../listeners')
 
-export default class SighupListener extends ListenerAbstract {
+module.exports = class SighupListener extends ListenerAbstract {
   constructor (emitter) {
     super(emitter, 'SIGHUP')
   }

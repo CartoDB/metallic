@@ -1,4 +1,4 @@
-export default class LauncherExitOnErrorMixin {
+module.exports = class LauncherExitOnErrorMixin {
   static mix (superclass) {
     return class extends superclass {
       async run () {

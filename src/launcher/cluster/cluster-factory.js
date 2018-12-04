@@ -1,10 +1,10 @@
-import { FactoryInterface } from '../../interfaces'
-import ServerFactory from './server'
-import LeaderFactory from './leader'
+const { FactoryInterface } = require('../../interfaces')
+const ServerFactory = require('./server')
+const LeaderFactory = require('./leader')
 
 const ClusterClassFactories = new Set([ LeaderFactory, ServerFactory ])
 
-export default class ClusterFactory extends FactoryInterface {
+module.exports = class ClusterFactory extends FactoryInterface {
   static create ({ httpServer, metrics, logger, options = { enabled: false } } = {}) {
     for (let ClusterClassFactory of ClusterClassFactories) {
       if (ClusterClassFactory.shouldCreate(options.enabled)) {

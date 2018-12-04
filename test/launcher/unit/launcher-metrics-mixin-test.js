@@ -1,9 +1,9 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import LauncherInterface from '../../../src/launcher/launcher-interface'
-import DummyLauncher from '../support/dummy-launcher'
-import LauncherMetricsMixin from '../../../src/launcher/launcher-metrics-mixin'
-import { MetricsInterface } from '../../../src/metrics'
+const assert = require('assert')
+const sinon = require('sinon')
+const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const DummyLauncher = require('../support/dummy-launcher')
+const LauncherMetricsMixin = require('../../../src/launcher/launcher-metrics-mixin')
+const { MetricsInterface } = require('../../../src/metrics')
 
 class Metrics extends MetricsInterface {}
 

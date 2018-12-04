@@ -1,7 +1,7 @@
-import LoggerOutputInterface from './logger-output-interface'
-import { ParentClassError } from '../../errors'
+const LoggerOutputInterface = require('./logger-output-interface')
+const { ParentClassError } = require('../../errors')
 
-export default class LoggerOutputs extends Set {
+module.exports = class LoggerOutputs extends Set {
   add (output) {
     if (!(output instanceof LoggerOutputInterface)) {
       throw new ParentClassError(output.constructor.name, LoggerOutputInterface.name)

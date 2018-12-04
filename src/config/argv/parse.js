@@ -1,6 +1,6 @@
-import meow from 'meow'
-import readPkgUp from 'read-pkg-up'
-import helpInfo from './help-info'
+const meow = require('meow')
+const readPkgUp = require('read-pkg-up')
+const helpInfo = require('./help-info')
 
 const pkg = readPkgUp.sync({
   cwd: process.cwd(),
@@ -18,7 +18,7 @@ const meowOptions = {
   }
 }
 
-export default function parseArguments (options = {}) {
+module.exports = function parseArguments (options = {}) {
   const help = helpInfo(options.help)
   const args = meow({ help, pkg }, meowOptions).flags
 

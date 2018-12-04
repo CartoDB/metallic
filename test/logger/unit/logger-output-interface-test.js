@@ -1,6 +1,6 @@
-import assert from 'assert'
-import LoggerOutputInterface from '../../../src/logger/outputs/logger-output-interface'
-import { AbstractClassError, UnimplementedError } from '../../../src/errors'
+const assert = require('assert')
+const LoggerOutputInterface = require('../../../src/logger/outputs/logger-output-interface')
+const { AbstractClassError, UnimplementedError } = require('../../../src/errors')
 
 class LoggerOutput extends LoggerOutputInterface {}
 

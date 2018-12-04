@@ -1,10 +1,12 @@
-import config from './config'
-import MetricsFactory, { MetricsInterface } from './metrics'
-import LoggerFactory, { LoggerInterface } from './logger'
-import HttpServerFactory from './app'
-import LauncherFactory from './launcher'
+const config = require('./config')
+const MetricsFactory = require('./metrics')
+const { MetricsInterface } = MetricsFactory
+const LoggerFactory = require('./logger')
+const { LoggerInterface } = LoggerFactory
+const HttpServerFactory = require('./app')
+const LauncherFactory = require('./launcher')
 
-export default class Metallic {
+module.exports = class Metallic {
   constructor (clientOptions = {}) {
     const options = config(clientOptions)
 

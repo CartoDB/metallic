@@ -1,5 +1,6 @@
-import assert from 'assert'
-import LoggerFactory, { LoggerInterface } from '../../../src/logger'
+const assert = require('assert')
+const LoggerFactory = require('../../../src/logger')
+const { LoggerInterface } = LoggerFactory
 
 describe('logger-factory', function () {
   it('.create() should return a Logger instance', function () {

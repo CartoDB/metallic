@@ -1,4 +1,4 @@
-export default class LeaderLoggerMixin {
+module.exports = class LeaderLoggerMixin {
   static mix (superclass) {
     return class extends superclass {
       constructor ({ logger }) {

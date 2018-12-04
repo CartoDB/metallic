@@ -1,16 +1,16 @@
-import cluster from 'cluster'
-import os from 'os'
-import { FactoryInterface } from '../../../interfaces'
-import ListenerLoggerMixin from '../../listener-logger-mixin'
-import Sigusr2Listener from './sigusr2-listener'
-import SighupListener from './sighup-listener'
-import ServerExitListener from './server-exit-listener'
-import LeaderRebootListenerMixin from './leader-reboot-listener-mixin'
-import LeaderReforkListenerMixin from './leader-refork-listener-mixin'
-import LeaderRotateLogListenerMixin from './leader-rotate-log-listener-mixin'
-import Leader from './leader'
+const cluster = require('cluster')
+const os = require('os')
+const { FactoryInterface } = require('../../../interfaces')
+const ListenerLoggerMixin = require('../../listener-logger-mixin')
+const Sigusr2Listener = require('./sigusr2-listener')
+const SighupListener = require('./sighup-listener')
+const ServerExitListener = require('./server-exit-listener')
+const LeaderRebootListenerMixin = require('./leader-reboot-listener-mixin')
+const LeaderReforkListenerMixin = require('./leader-refork-listener-mixin')
+const LeaderRotateLogListenerMixin = require('./leader-rotate-log-listener-mixin')
+const Leader = require('./leader')
 
-export default class LeaderFactory extends FactoryInterface {
+module.exports = class LeaderFactory extends FactoryInterface {
   static create ({ metrics, logger } = {}) {
     const serverPoolSize = os.cpus().length
 

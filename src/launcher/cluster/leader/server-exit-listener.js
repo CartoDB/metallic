@@ -1,6 +1,6 @@
-import { ListenerAbstract } from '../../../listeners'
+const { ListenerAbstract } = require('../../../listeners')
 
-export default class ServerExitListener extends ListenerAbstract {
+module.exports = class ServerExitListener extends ListenerAbstract {
   constructor ({ emitter }) {
     super(emitter, 'exit')
   }

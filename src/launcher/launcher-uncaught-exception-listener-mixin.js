@@ -1,4 +1,4 @@
-export default class LauncherUncaughtExceptionListenerMixin {
+module.exports = class LauncherUncaughtExceptionListenerMixin {
   static mix (superclass) {
     return class extends superclass {
       constructor ({ uncaughtExceptionListeners }) {

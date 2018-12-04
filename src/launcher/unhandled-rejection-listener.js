@@ -1,6 +1,6 @@
-import { ListenerAbstract } from '../listeners'
+const { ListenerAbstract } = require('../listeners')
 
-export default class UnhandledRejectionListener extends ListenerAbstract {
+module.exports = class UnhandledRejectionListener extends ListenerAbstract {
   constructor ({ emitter }) {
     super(emitter, 'unhandledRejection')
   }

@@ -1,6 +1,6 @@
-import assert from 'assert'
-import ClusterInterface from '../../../../src/launcher/cluster/cluster-interface'
-import { AbstractClassError, UnimplementedError } from '../../../../src/errors'
+const assert = require('assert')
+const ClusterInterface = require('../../../../src/launcher/cluster/cluster-interface')
+const { AbstractClassError, UnimplementedError } = require('../../../../src/errors')
 
 class Cluster extends ClusterInterface {}
 

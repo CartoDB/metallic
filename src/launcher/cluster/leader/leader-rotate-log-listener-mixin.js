@@ -1,4 +1,4 @@
-export default class LeaderRotateLogListenerMixin {
+module.exports = class LeaderRotateLogListenerMixin {
   static mix (superclass) {
     return class extends superclass {
       constructor ({ sigusr2Listeners }) {

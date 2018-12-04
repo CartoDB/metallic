@@ -1,11 +1,11 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import LoggerInterface from '../../../src/logger/logger-interface'
-import DummyLogger from '../support/dummy-logger'
-import LoggerLogCommandListenerMixin from '../../../src/logger/logger-log-command-listener-mixin'
-import LogCommandListener from '../../../src/logger/log-command-listener'
-import { ParentClassError } from '../../../src/errors'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const LoggerInterface = require('../../../src/logger/logger-interface')
+const DummyLogger = require('../support/dummy-logger')
+const LoggerLogCommandListenerMixin = require('../../../src/logger/logger-log-command-listener-mixin')
+const LogCommandListener = require('../../../src/logger/log-command-listener')
+const { ParentClassError } = require('../../../src/errors')
 
 describe('logger-log-command-listener-mixin', function () {
   beforeEach(function () {

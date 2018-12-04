@@ -1,5 +1,6 @@
-import assert from 'assert'
-import Metallic, { SERVER } from '../src'
+const assert = require('assert')
+const Metallic = require('../src')
+const { SERVER } = Metallic
 
 describe('metallic', function () {
   describe('OOP API', function () {

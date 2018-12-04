@@ -1,4 +1,4 @@
-export default class LauncherExitSignalListenerMixin {
+module.exports = class LauncherExitSignalListenerMixin {
   static mix (superclass) {
     return class extends superclass {
       constructor ({ exitSignalListeners }) {

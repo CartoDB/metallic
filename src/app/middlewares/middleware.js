@@ -1,6 +1,6 @@
-import MiddlewareInterface from './middleware-interface'
+const MiddlewareInterface = require('./middleware-interface')
 
-export default class Middleware extends MiddlewareInterface {
+module.exports = class Middleware extends MiddlewareInterface {
   constructor () {
     super()
     this.name = new.target.name

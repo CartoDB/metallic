@@ -1,6 +1,6 @@
-import assert from 'assert'
-import fetch from 'node-fetch'
-import { Negotiation } from '../src/'
+const assert = require('assert')
+const fetch = require('node-fetch')
+const { Negotiation } = require('../src/')
 
 describe('metallic content middleware example', function () {
   before(function () {

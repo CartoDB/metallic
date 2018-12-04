@@ -1,7 +1,7 @@
-import Middleware from './middleware'
-import uuid from 'node-uuid'
+const Middleware = require('./middleware')
+const uuid = require('node-uuid')
 
-export default class RequestIdMiddleware extends Middleware {
+module.exports = class RequestIdMiddleware extends Middleware {
   middleware () {
     return async (ctx, next) => {
       try {

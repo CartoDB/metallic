@@ -1,10 +1,10 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import LauncherInterface from '../../../src/launcher/launcher-interface'
-import DummyLauncher from '../support/dummy-launcher'
-import LauncherUncaughtExceptionListenerMixin from '../../../src/launcher/launcher-uncaught-exception-listener-mixin'
-import UncaughtExceptionListener from '../../../src/launcher/uncaught-exception-listener'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const DummyLauncher = require('../support/dummy-launcher')
+const LauncherUncaughtExceptionListenerMixin = require('../../../src/launcher/launcher-uncaught-exception-listener-mixin')
+const UncaughtExceptionListener = require('../../../src/launcher/uncaught-exception-listener')
 
 describe('launcher-uncaught-exception-listener-mixin', function () {
   beforeEach(function () {

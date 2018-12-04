@@ -1,9 +1,9 @@
-import assert from 'assert'
-import LoggerFactory from '../../../../src/logger'
-import MetricsFactory from '../../../../src/metrics'
-import HttpServerFactory from '../../../../src/app'
-import { RunnerInterface } from '../../../../src/interfaces'
-import ClusterFactory from '../../../../src/launcher/cluster'
+const assert = require('assert')
+const LoggerFactory = require('../../../../src/logger')
+const MetricsFactory = require('../../../../src/metrics')
+const HttpServerFactory = require('../../../../src/app')
+const { RunnerInterface } = require('../../../../src/interfaces')
+const ClusterFactory = require('../../../../src/launcher/cluster')
 
 describe('cluster-factory', function () {
   it('.create() should return a Runner instance', function () {

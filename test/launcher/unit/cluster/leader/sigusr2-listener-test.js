@@ -1,7 +1,7 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import Sigusr2Listener from '../../../../../src/launcher/cluster/leader/sigusr2-listener'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const Sigusr2Listener = require('../../../../../src/launcher/cluster/leader/sigusr2-listener')
 
 describe('sigusr2-listener', function () {
   beforeEach(function () {

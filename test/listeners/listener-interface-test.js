@@ -1,6 +1,6 @@
-import assert from 'assert'
-import { ListenerInterface } from '../../src/listeners'
-import { UnimplementedMethod } from '../../src/errors'
+const assert = require('assert')
+const { ListenerInterface } = require('../../src/listeners')
+const { UnimplementedMethod } = require('../../src/errors')
 
 class Listener extends ListenerInterface {}
 

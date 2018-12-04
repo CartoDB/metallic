@@ -1,12 +1,12 @@
-import path from 'path'
-import readPkgUp from 'read-pkg-up'
+const path = require('path')
+const readPkgUp = require('read-pkg-up')
 
 const { pkg } = readPkgUp.sync({
   cwd: process.cwd(),
   normalize: false
 })
 
-export default {
+module.exports = {
   name: pkg.name,
   enabled: true,
   console: true,

@@ -1,6 +1,6 @@
-import { AbstractClassError, UnimplementedError } from '../../errors'
+const { AbstractClassError, UnimplementedError } = require('../../errors')
 
-export default class LoggerOutputInterface {
+module.exports = class LoggerOutputInterface {
   constructor () {
     if (new.target === LoggerOutputInterface) {
       throw new AbstractClassError(LoggerOutputInterface.name)

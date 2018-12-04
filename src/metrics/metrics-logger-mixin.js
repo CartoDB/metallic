@@ -1,7 +1,7 @@
-import { LoggerInterface } from '../logger'
-import { ParentClassError } from '../errors'
+const { LoggerInterface } = require('../logger')
+const { ParentClassError } = require('../errors')
 
-export default class LoggerSighupListenerMixin {
+module.exports = class LoggerSighupListenerMixin {
   static mix (superclass) {
     return class extends superclass {
       constructor ({ logger }) {

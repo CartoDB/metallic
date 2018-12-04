@@ -1,11 +1,11 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import { ListenerInterface } from '../../src/listeners'
-import { RunnerInterface } from '../../src/interfaces'
-import { LoggerInterface } from '../../src/logger'
-import { NotReadyError } from '../../src/errors'
-import HttpServer from '../../src/app/http-server'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const { ListenerInterface } = require('../../src/listeners')
+const { RunnerInterface } = require('../../src/interfaces')
+const { LoggerInterface } = require('../../src/logger')
+const { NotReadyError } = require('../../src/errors')
+const HttpServer = require('../../src/app/http-server')
 
 class Listener extends ListenerInterface {}
 class Logger extends LoggerInterface {}

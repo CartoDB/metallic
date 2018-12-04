@@ -1,7 +1,7 @@
-import { AbstractClassError, UnimplementedError } from '../../../errors'
-import ClusterInterface from '../cluster-interface'
+const { AbstractClassError, UnimplementedError } = require('../../../errors')
+const ClusterInterface = require('../cluster-interface')
 
-export default class LeaderInterface extends ClusterInterface {
+module.exports = class LeaderInterface extends ClusterInterface {
   constructor () {
     if (new.target === LeaderInterface) {
       throw new AbstractClassError(LeaderInterface.name)

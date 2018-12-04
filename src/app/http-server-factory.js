@@ -1,17 +1,17 @@
-import { FactoryInterface } from '../interfaces'
-import App from './app'
-import Koa from 'koa'
-import AppMiddlewares from './middlewares/app-middlewares'
-import CatchErrorMiddleware from './middlewares/catch-error-middleware'
-import ErrorMiddleware from './middlewares/error-middleware'
-import RequestIdMiddleware from './middlewares/request-id-middleware'
-import LogMiddleware from './middlewares/log-middleware'
-import MetricsMiddleware from './middlewares/metrics-middleware'
-import ResponseTimeMiddleware from './middlewares/response-time-middleware'
-import HttpServerLoggerMixin from './http-server-logger-mixin'
-import HttpServer from './http-server'
+const { FactoryInterface } = require('../interfaces')
+const App = require('./app')
+const Koa = require('koa')
+const AppMiddlewares = require('./middlewares/app-middlewares')
+const CatchErrorMiddleware = require('./middlewares/catch-error-middleware')
+const ErrorMiddleware = require('./middlewares/error-middleware')
+const RequestIdMiddleware = require('./middlewares/request-id-middleware')
+const LogMiddleware = require('./middlewares/log-middleware')
+const MetricsMiddleware = require('./middlewares/metrics-middleware')
+const ResponseTimeMiddleware = require('./middlewares/response-time-middleware')
+const HttpServerLoggerMixin = require('./http-server-logger-mixin')
+const HttpServer = require('./http-server')
 
-export default class HttpServerFactory extends FactoryInterface {
+module.exports = class HttpServerFactory extends FactoryInterface {
   static create ({ metrics, logger, options } = {}) {
     options = {
       port: 0,

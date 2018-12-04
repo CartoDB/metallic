@@ -1,10 +1,10 @@
-import Middleware from './middleware'
-import { STATUS_CODES } from 'http'
+const Middleware = require('./middleware')
+const { STATUS_CODES } = require('http')
 
 const DEVELOPMENT = 'development'
 const env = process.env.NODE_ENV || DEVELOPMENT
 
-export default class ErrorMiddleware extends Middleware {
+module.exports = class ErrorMiddleware extends Middleware {
   middleware () {
     return async (ctx, next) => {
       try {

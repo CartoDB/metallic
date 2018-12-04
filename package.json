@@ -35,7 +35,7 @@
   },
   "scripts": {
     "lint:examples": "standard \"examples/src/**/*.js\"",
-    "test:examples": "npm run lint:examples && NODE_ENV=test mocha --recursive --require babel-register benchmark/test",
+    "test:examples": "npm run lint:examples && NODE_ENV=test mocha --recursive --require babel-register examples/test",
     "clean:examples": "rimraf examples/lib",
     "build:examples": "npm run clean:examples && babel examples/src -d examples/lib --source-maps inline",
     "example": "node examples/lib/run",

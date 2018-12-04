@@ -1,7 +1,7 @@
-import { RunnerInterface } from '../interfaces'
-import { NotReadyError } from '../errors'
+const { RunnerInterface } = require('../interfaces')
+const { NotReadyError } = require('../errors')
 
-export default class HttpServer extends RunnerInterface {
+module.exports = class HttpServer extends RunnerInterface {
   constructor ({ app, port }) {
     super()
     this.app = app

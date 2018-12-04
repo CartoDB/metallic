@@ -1,11 +1,11 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import LeaderInterface from '../../../../../src/launcher/cluster/leader/leader-interface'
-import DummyLeader from '../../../support/dummy-leader'
-import LeaderRebootListenerMixin from '../../../../../src/launcher/cluster/leader/leader-reboot-listener-mixin'
-import SighupListener from '../../../../../src/launcher/cluster/leader/sighup-listener'
-import cluster from 'cluster'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const LeaderInterface = require('../../../../../src/launcher/cluster/leader/leader-interface')
+const DummyLeader = require('../../../support/dummy-leader')
+const LeaderRebootListenerMixin = require('../../../../../src/launcher/cluster/leader/leader-reboot-listener-mixin')
+const SighupListener = require('../../../../../src/launcher/cluster/leader/sighup-listener')
+const cluster = require('cluster')
 
 describe('leader-exit-signal-listener-mixin', function () {
   beforeEach(function () {

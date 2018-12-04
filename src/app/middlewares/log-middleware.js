@@ -1,6 +1,6 @@
-import Middleware from './middleware'
+const Middleware = require('./middleware')
 
-export default class LogMiddleware extends Middleware {
+module.exports = class LogMiddleware extends Middleware {
   constructor ({ logger }) {
     super()
     this.logger = logger

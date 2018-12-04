@@ -1,10 +1,10 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import EventEmitter from 'events'
-import LauncherInterface from '../../../src/launcher/launcher-interface'
-import DummyLauncher from '../support/dummy-launcher'
-import LauncherExitSignalListenerMixin from '../../../src/launcher/launcher-exit-signal-listener-mixin'
-import SigintListener from '../../../src/launcher/sigint-listener'
+const assert = require('assert')
+const sinon = require('sinon')
+const EventEmitter = require('events')
+const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const DummyLauncher = require('../support/dummy-launcher')
+const LauncherExitSignalListenerMixin = require('../../../src/launcher/launcher-exit-signal-listener-mixin')
+const SigintListener = require('../../../src/launcher/sigint-listener')
 
 describe('launcher-exit-signal-listener-mixin', function () {
   beforeEach(function () {

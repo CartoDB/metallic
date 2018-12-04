@@ -1,7 +1,7 @@
-import meow from 'meow'
-import HelloWorld from './hello-world'
-import Forbidden from './forbidden'
-import Negotiation from './negotiation'
+const meow = require('meow')
+const HelloWorld = require('./hello-world')
+const Forbidden = require('./forbidden')
+const Negotiation = require('./negotiation')
 
 const examples = new Map()
 

@@ -1,4 +1,4 @@
-export default class App {
+module.exports = class App {
   constructor (app, middlewares) {
     this.provider = app
 

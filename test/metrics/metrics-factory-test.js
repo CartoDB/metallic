@@ -1,5 +1,6 @@
-import assert from 'assert'
-import MetricsFactory, { MetricsInterface } from '../../src/metrics'
+const assert = require('assert')
+const MetricsFactory = require('../../src/metrics')
+const { MetricsInterface } = MetricsFactory
 
 describe('metrics-factory', function () {
   it('.create() should return a Metrics instance', function () {

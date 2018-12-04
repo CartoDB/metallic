@@ -1,6 +1,7 @@
-import Metallic, { SERVER } from '../../lib'
+const Metallic = require('../../lib')
+const { SERVER } = Metallic
 
-export default class HelloWorld {
+module.exports = class HelloWorld {
   static create (options) {
     const metallic = new Metallic(options)
 

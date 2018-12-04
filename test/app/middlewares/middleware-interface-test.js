@@ -1,6 +1,6 @@
-import assert from 'assert'
-import MiddlewareInterface from '../../../src/app/middlewares/middleware-interface'
-import { AbstractClassError, UnimplementedError } from '../../../src/errors'
+const assert = require('assert')
+const MiddlewareInterface = require('../../../src/app/middlewares/middleware-interface')
+const { AbstractClassError, UnimplementedError } = require('../../../src/errors')
 
 class Middleware extends MiddlewareInterface {}
 

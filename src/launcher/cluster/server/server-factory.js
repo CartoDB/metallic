@@ -1,7 +1,7 @@
-import { FactoryInterface } from '../../../interfaces'
-import Server from './server'
+const { FactoryInterface } = require('../../../interfaces')
+const Server = require('./server')
 
-export default class ServerFactory extends FactoryInterface {
+module.exports = class ServerFactory extends FactoryInterface {
   static create ({ httpServer } = {}) {
     return new Server({ httpServer })
   }

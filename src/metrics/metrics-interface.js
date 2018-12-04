@@ -1,7 +1,7 @@
-import { AbstractClassError, UnimplementedError } from '../errors'
-import { RunnerInterface } from '../interfaces'
+const { AbstractClassError, UnimplementedError } = require('../errors')
+const { RunnerInterface } = require('../interfaces')
 
-export default class MetricsInterface extends RunnerInterface {
+module.exports = class MetricsInterface extends RunnerInterface {
   constructor () {
     if (new.target === MetricsInterface) {
       throw new AbstractClassError(MetricsInterface.name)

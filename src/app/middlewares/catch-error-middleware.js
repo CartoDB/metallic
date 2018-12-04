@@ -1,6 +1,6 @@
-import Middleware from './middleware'
+const Middleware = require('./middleware')
 
-export default class RequestIdMiddleware extends Middleware {
+module.exports = class RequestIdMiddleware extends Middleware {
   middleware () {
     return async (ctx, next) => {
       try {

@@ -1,6 +1,6 @@
-import Middleware from './middleware'
+const Middleware = require('./middleware')
 
-export default class ResponseTimeMiddleware extends Middleware {
+module.exports = class ResponseTimeMiddleware extends Middleware {
   middleware () {
     return async (ctx, next) => {
       const start = Date.now()

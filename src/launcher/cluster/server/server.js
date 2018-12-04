@@ -1,8 +1,9 @@
-import Role, { SERVER } from '../role'
-import ClusterInterface from '../cluster-interface'
-import cluster from 'cluster'
+const Role = require('../role')
+const { SERVER } = Role
+const ClusterInterface = require('../cluster-interface')
+const cluster = require('cluster')
 
-export default class Server extends ClusterInterface {
+module.exports = class Server extends ClusterInterface {
   constructor ({ httpServer }) {
     super()
     this.httpServer = httpServer

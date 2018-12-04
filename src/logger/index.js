@@ -1,2 +1,6 @@
-export { default } from './logger-factory'
-export { default as LoggerInterface } from './logger-interface'
+const LoggerFactory = require('./logger-factory')
+const LoggerInterface = require('./logger-interface')
+
+LoggerFactory.LoggerInterface = LoggerInterface
+
+module.exports = LoggerFactory

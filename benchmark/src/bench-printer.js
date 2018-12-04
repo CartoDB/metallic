@@ -1,5 +1,5 @@
-import pkg from '../../package.json'
-import prependFile from 'prepend-file'
+const pkg = require('../../package.json')
+const prependFile = require('prepend-file')
 
 const markdown = ctx => `## ${ctx.name} ${ctx.version}\n${ctx.platform} / node ${ctx.node} / v8 ${ctx.v8} (${ctx.date})\n\`\`\`\n${ctx.results}\`\`\`\n`
 const text = ctx => `${ctx.name} ${ctx.version}\n${ctx.platform} / node ${ctx.node} / v8 ${ctx.v8} (${ctx.date})\n${ctx.results}\n`
@@ -17,7 +17,7 @@ const template = (pkg, results, isRelease) => {
   return isRelease ? markdown(ctx) : text(ctx)
 }
 
-export default class BenchPrinter {
+module.exports = class BenchPrinter {
   constructor (isRelease = false) {
     this.isRelease = isRelease
     this.outputFile = `${process.cwd()}/BENCHMARK.md`

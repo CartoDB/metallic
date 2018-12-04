@@ -1,4 +1,4 @@
-export default class HttpServerLoggerMixin {
+module.exports = class HttpServerLoggerMixin {
   static mix (superclass) {
     return class extends superclass {
       constructor ({ logger }) {

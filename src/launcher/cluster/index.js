@@ -1,2 +1,9 @@
-export { default } from './cluster-factory'
-export { default as Role, LEADER, SERVER } from './role'
+const ClusterFactory = require('./cluster-factory')
+const Role = require('./role')
+const { LEADER, SERVER } = Role
+
+ClusterFactory.Role = Role
+ClusterFactory.LEADER = LEADER
+ClusterFactory.SERVER = SERVER
+
+module.exports = ClusterFactory

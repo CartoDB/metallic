@@ -1,6 +1,6 @@
-import LoggerOutputInterface from './logger-output-interface'
+const LoggerOutputInterface = require('./logger-output-interface')
 
-export default class FileOutput extends LoggerOutputInterface {
+module.exports = class FileOutput extends LoggerOutputInterface {
   constructor (enabled = false, path) {
     super()
     this.level = 'info'

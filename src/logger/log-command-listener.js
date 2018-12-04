@@ -1,6 +1,6 @@
-import { ListenerAbstract } from '../listeners'
+const { ListenerAbstract } = require('../listeners')
 
-export default class LogCommandListener extends ListenerAbstract {
+module.exports = class LogCommandListener extends ListenerAbstract {
   constructor (emitter) {
     super(emitter, 'message')
     this.command = 'logger:reopen-file-streams'

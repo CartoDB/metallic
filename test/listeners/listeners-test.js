@@ -1,6 +1,6 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import { ListenerInterface, Listeners } from '../../src/listeners'
+const assert = require('assert')
+const sinon = require('sinon')
+const { ListenerInterface, Listeners } = require('../../src/listeners')
 
 class Listener extends ListenerInterface {}
 

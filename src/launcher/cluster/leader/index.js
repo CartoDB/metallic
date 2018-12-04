@@ -1,1 +1,3 @@
-export { default } from './leader-factory'
+const LeaderFactory = require('./leader-factory')
+
+module.exports = LeaderFactory

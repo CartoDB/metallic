@@ -1,8 +1,8 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import { RunnerInterface } from '../../../../../src/interfaces'
-import Server from '../../../../../src/launcher/cluster/server/server'
-import { SERVER } from '../../../../../src/launcher/cluster/role'
+const assert = require('assert')
+const sinon = require('sinon')
+const { RunnerInterface } = require('../../../../../src/interfaces')
+const Server = require('../../../../../src/launcher/cluster/server/server')
+const { SERVER } = require('../../../../../src/launcher/cluster/role')
 
 class HttpServer extends RunnerInterface {}
 

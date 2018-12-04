@@ -1,7 +1,7 @@
-import { AbstractClassError } from '../errors'
-import { RunnerInterface } from '../interfaces'
+const { AbstractClassError } = require('../errors')
+const { RunnerInterface } = require('../interfaces')
 
-export default class LauncherInterface extends RunnerInterface {
+module.exports = class LauncherInterface extends RunnerInterface {
   constructor () {
     if (new.target === LauncherInterface) {
       throw new AbstractClassError(LauncherInterface.name)

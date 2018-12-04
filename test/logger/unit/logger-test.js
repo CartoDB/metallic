@@ -1,7 +1,7 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import { LoggerInterface } from '../../../src/logger'
-import Logger from '../../../src/logger/logger'
+const assert = require('assert')
+const sinon = require('sinon')
+const { LoggerInterface } = require('../../../src/logger')
+const Logger = require('../../../src/logger/logger')
 
 class LoggerProvider extends LoggerInterface {}
 

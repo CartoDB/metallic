@@ -1,4 +1,4 @@
-export default class LauncherMetricsMixin {
+module.exports = class LauncherMetricsMixin {
   static mix (superclass) {
     return class extends superclass {
       constructor ({ metrics }) {

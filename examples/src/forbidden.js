@@ -1,7 +1,8 @@
-import { STATUS_CODES } from 'http'
-import Metallic, { SERVER } from '../../lib'
+const { STATUS_CODES } = require('http')
+const Metallic = require('../../lib')
+const { SERVER } = Metallic
 
-export default class Forbidden {
+module.exports = class Forbidden {
   static create (options) {
     const metallic = new Metallic(options)
 

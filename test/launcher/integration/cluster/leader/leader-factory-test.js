@@ -1,8 +1,8 @@
-import assert from 'assert'
-import { RunnerInterface } from '../../../../../src/interfaces'
-import MetricsFactory from '../../../../../src/metrics'
-import LoggerFactory from '../../../../../src/logger'
-import LeaderFactory from '../../../../../src/launcher/cluster/leader'
+const assert = require('assert')
+const { RunnerInterface } = require('../../../../../src/interfaces')
+const MetricsFactory = require('../../../../../src/metrics')
+const LoggerFactory = require('../../../../../src/logger')
+const LeaderFactory = require('../../../../../src/launcher/cluster/leader')
 
 describe('leader-factory', function () {
   it('.create() should return a Runner instance', function () {

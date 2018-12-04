@@ -1,8 +1,9 @@
-import { ExitError } from '../../../errors'
-import Role, { LEADER } from '../role'
-import LeaderInterface from './leader-interface'
+const { ExitError } = require('../../../errors')
+const Role = require('../role')
+const { LEADER } = Role
+const LeaderInterface = require('./leader-interface')
 
-export default class Leader extends LeaderInterface {
+module.exports = class Leader extends LeaderInterface {
   constructor ({ cluster, serverPoolSize }) {
     super()
     this.cluster = cluster

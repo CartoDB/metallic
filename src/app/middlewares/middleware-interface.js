@@ -1,6 +1,6 @@
-import { AbstractClassError, UnimplementedError } from '../../errors'
+const { AbstractClassError, UnimplementedError } = require('../../errors')
 
-export default class MiddlewareInterface {
+module.exports = class MiddlewareInterface {
   constructor () {
     if (new.target === MiddlewareInterface) {
       throw new AbstractClassError(MiddlewareInterface.name)

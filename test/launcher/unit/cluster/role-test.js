@@ -1,5 +1,6 @@
-import assert from 'assert'
-import Role, { LEADER, SERVER } from '../../../../src/launcher/cluster/role'
+const assert = require('assert')
+const Role = require('../../../../src/launcher/cluster/role')
+const { LEADER, SERVER } = Role
 
 describe('role', function () {
   it('should fail when creates an instance of Role', function () {

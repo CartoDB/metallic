@@ -1,6 +1,6 @@
-import assert from 'assert'
-import { RunnerInterface } from '../../src/interfaces'
-import HttpServerFactory from '../../src/app/http-server-factory'
+const assert = require('assert')
+const { RunnerInterface } = require('../../src/interfaces')
+const HttpServerFactory = require('../../src/app/http-server-factory')
 
 describe('http-server-factory', function () {
   it('.create() should return a HttpServer instance', function () {

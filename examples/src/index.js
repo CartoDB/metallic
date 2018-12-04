@@ -1,3 +1,5 @@
-export { default as HelloWorld } from './hello-world'
-export { default as Negotiation } from './negotiation'
-export { default as Forbidden } from './forbidden'
+const HelloWorld = require('./hello-world')
+const Negotiation = require('./negotiation')
+const Forbidden = require('./forbidden')
+
+module.exports = { HelloWorld, Negotiation, Forbidden }

@@ -1,4 +1,4 @@
-export default class LeaderReforkListenerMixin {
+module.exports = class LeaderReforkListenerMixin {
   static mix (superclass) {
     return class extends superclass {
       constructor ({ serverExitListeners }) {

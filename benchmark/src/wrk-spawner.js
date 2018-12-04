@@ -1,6 +1,6 @@
-import { spawn } from 'child_process'
+const { spawn } = require('child_process')
 
-export default class WrkSpawner {
+module.exports = class WrkSpawner {
   constructor (endpoint = 'http://localhost') {
     this.endpoint = endpoint
   }

@@ -1,9 +1,9 @@
-import assert from 'assert'
-import sinon from 'sinon'
-import LauncherInterface from '../../../src/launcher/launcher-interface'
-import DummyLauncher from '../support/dummy-launcher'
-import LauncherLoggerMixin from '../../../src/launcher/launcher-logger-mixin'
-import { LoggerInterface } from '../../../src/logger'
+const assert = require('assert')
+const sinon = require('sinon')
+const LauncherInterface = require('../../../src/launcher/launcher-interface')
+const DummyLauncher = require('../support/dummy-launcher')
+const LauncherLoggerMixin = require('../../../src/launcher/launcher-logger-mixin')
+const { LoggerInterface } = require('../../../src/logger')
 
 class Logger extends LoggerInterface {}
 

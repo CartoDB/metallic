@@ -1,20 +1,20 @@
-import { FactoryInterface } from '../interfaces'
-import ClusterFactory from './cluster'
-import { Listeners } from '../listeners'
-import ListenerLoggerMixin from './listener-logger-mixin'
-import SigintListener from './sigint-listener'
-import SigtermListener from './sigterm-listener'
-import UncaughtExceptionListener from './uncaught-exception-listener'
-import UnhandledRejectionListener from './unhandled-rejection-listener'
-import LauncherExitOnErrorMixin from './launcher-exit-on-error-mixin'
-import LauncherUncaughtExceptionListenerMixin from './launcher-uncaught-exception-listener-mixin'
-import LauncherExitSignalListenerMixin from './launcher-exit-signal-listener-mixin'
-import LauncherUnhandledRejectionListenerMixin from './launcher-unhandled-rejection-listener-mixin'
-import LauncherLoggerMixin from './launcher-logger-mixin'
-import LauncherMetricsMixin from './launcher-metrics-mixin'
-import Launcher from './launcher'
+const { FactoryInterface } = require('../interfaces')
+const ClusterFactory = require('./cluster')
+const { Listeners } = require('../listeners')
+const ListenerLoggerMixin = require('./listener-logger-mixin')
+const SigintListener = require('./sigint-listener')
+const SigtermListener = require('./sigterm-listener')
+const UncaughtExceptionListener = require('./uncaught-exception-listener')
+const UnhandledRejectionListener = require('./unhandled-rejection-listener')
+const LauncherExitOnErrorMixin = require('./launcher-exit-on-error-mixin')
+const LauncherUncaughtExceptionListenerMixin = require('./launcher-uncaught-exception-listener-mixin')
+const LauncherExitSignalListenerMixin = require('./launcher-exit-signal-listener-mixin')
+const LauncherUnhandledRejectionListenerMixin = require('./launcher-unhandled-rejection-listener-mixin')
+const LauncherLoggerMixin = require('./launcher-logger-mixin')
+const LauncherMetricsMixin = require('./launcher-metrics-mixin')
+const Launcher = require('./launcher')
 
-export default class LauncherFactory extends FactoryInterface {
+module.exports = class LauncherFactory extends FactoryInterface {
   static create ({ httpServer, metrics, logger, options } = {}) {
     const target = ClusterFactory.create({ httpServer, metrics, logger, options })
 

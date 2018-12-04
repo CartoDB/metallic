@@ -1,6 +1,6 @@
-import { AbstractClassError, UnimplementedError } from '../errors'
+const { AbstractClassError, UnimplementedError } = require('../errors')
 
-export default class RunnerInterface {
+module.exports = class RunnerInterface {
   constructor () {
     if (new.target === RunnerInterface) {
       throw new AbstractClassError(RunnerInterface.name)

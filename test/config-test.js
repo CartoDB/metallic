@@ -1,5 +1,5 @@
-import assert from 'assert'
-import HelloWorld from './example/hello-world'
+const assert = require('assert')
+const HelloWorld = require('./example/hello-world')
 
 describe('config examples', function () {
   it('should create a logger instance with the provided name', function () {

@@ -1,14 +1,14 @@
-import { FactoryInterface } from '../interfaces'
-import ErrorListener from './error-listener'
-import MetricsErrorListenerMixin from './metrics-error-listener-mixin'
-import Metrics from './metrics'
-import StatsD from 'node-statsd'
-import defaults from './defaults'
-import MetricsLoggerMixin from './metrics-logger-mixin'
-import MetricsGaugeMemoryMixin from './metrics-gauge-memory-mixin'
-import MetricsGaugeCPUMixin from './metrics-gauge-cpu-mixin'
+const { FactoryInterface } = require('../interfaces')
+const ErrorListener = require('./error-listener')
+const MetricsErrorListenerMixin = require('./metrics-error-listener-mixin')
+const Metrics = require('./metrics')
+const StatsD = require('node-statsd')
+const defaults = require('./defaults')
+const MetricsLoggerMixin = require('./metrics-logger-mixin')
+const MetricsGaugeMemoryMixin = require('./metrics-gauge-memory-mixin')
+const MetricsGaugeCPUMixin = require('./metrics-gauge-cpu-mixin')
 
-export default class MetricsFactory extends FactoryInterface {
+module.exports = class MetricsFactory extends FactoryInterface {
   static create ({ logger, options } = {}) {
     const opts = { ...defaults, ...options }
 

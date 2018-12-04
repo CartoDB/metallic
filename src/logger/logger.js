@@ -1,6 +1,6 @@
-import LoggerInterface from './logger-interface'
+const LoggerInterface = require('./logger-interface')
 
-export default class Logger extends LoggerInterface {
+module.exports = class Logger extends LoggerInterface {
   constructor ({ provider }) {
     super()
     this.provider = provider

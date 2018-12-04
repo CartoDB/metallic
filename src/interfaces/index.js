@@ -1,2 +1,4 @@
-export { default as FactoryInterface } from './factory-interface'
-export { default as RunnerInterface } from './runner-interface'
+const FactoryInterface = require('./factory-interface')
+const RunnerInterface = require('./runner-interface')
+
+module.exports = { FactoryInterface, RunnerInterface }
