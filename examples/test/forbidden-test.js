@@ -28,10 +28,10 @@ describe('metallic 503 forbidden example', function () {
     const body = await res.text()
 
     assert.ok(!res.ok)
-    assert.equal(res.status, 403)
-    assert.equal(res.headers.get('content-type'), 'text/plain; charset=utf-8')
+    assert.strictEqual(res.status, 403)
+    assert.strictEqual(res.headers.get('content-type'), 'text/plain; charset=utf-8')
 
-    assert.equal(body, 'Forbidden')
+    assert.strictEqual(body, 'Forbidden')
   })
 
   it('GET / should response with the given x-request-id header', async function () {
@@ -40,7 +40,7 @@ describe('metallic 503 forbidden example', function () {
     })
 
     assert.ok(!res.ok)
-    assert.equal(res.headers.get('x-request-id'), 'wadus')
+    assert.strictEqual(res.headers.get('x-request-id'), 'wadus')
   })
 
   it('GET / should response with x-request-id header', async function () {

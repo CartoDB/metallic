@@ -27,10 +27,10 @@ describe('metallic hello world example', function () {
     const res = await fetch(`http://localhost:${this.port}/`)
     const body = await res.text()
     assert.ok(res.ok)
-    assert.equal(res.status, 200)
-    assert.equal(res.headers.get('content-type'), 'application/octet-stream')
+    assert.strictEqual(res.status, 200)
+    assert.strictEqual(res.headers.get('content-type'), 'application/octet-stream')
 
-    assert.equal(body, 'Hello World\n')
+    assert.strictEqual(body, 'Hello World\n')
   })
 
   it('GET / should response with the given x-request-id header', async function () {
@@ -39,7 +39,7 @@ describe('metallic hello world example', function () {
     })
 
     assert.ok(res.ok)
-    assert.equal(res.headers.get('x-request-id'), 'wadus')
+    assert.strictEqual(res.headers.get('x-request-id'), 'wadus')
   })
 
   it('GET / should response with x-request-id header', async function () {

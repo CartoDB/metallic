@@ -1,5 +1,5 @@
 const meow = require('meow')
-const { HelloWorld, Forbidden, Negotiation } = require('../examples/lib')
+const { HelloWorld, Forbidden, Negotiation } = require('../examples')
 
 if (typeof process.send !== 'function') {
   throw new Error('This module must be spawned as subprocess with IPC communication channel')

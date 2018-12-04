@@ -29,10 +29,10 @@ describe('metallic content middleware example', function () {
     })
     const body = await res.json()
     assert.ok(res.ok)
-    assert.equal(res.status, 200)
-    assert.equal(res.headers.get('Content-Type'), 'application/json; charset=utf-8')
+    assert.strictEqual(res.status, 200)
+    assert.strictEqual(res.headers.get('Content-Type'), 'application/json; charset=utf-8')
 
-    assert.deepEqual(body, { msg: 'Hello World' })
+    assert.deepStrictEqual(body, { msg: 'Hello World' })
   })
 
   it('GET / should accept html content', async function () {
@@ -43,10 +43,10 @@ describe('metallic content middleware example', function () {
     })
     const body = await res.text()
     assert.ok(res.ok)
-    assert.equal(res.status, 200)
-    assert.equal(res.headers.get('Content-Type'), 'text/html; charset=utf-8')
+    assert.strictEqual(res.status, 200)
+    assert.strictEqual(res.headers.get('Content-Type'), 'text/html; charset=utf-8')
 
-    assert.equal(body, '<h1>Hello World</h1>')
+    assert.strictEqual(body, '<h1>Hello World</h1>')
   })
 
   it('GET / should not accept xml content', async function () {
@@ -57,8 +57,8 @@ describe('metallic content middleware example', function () {
     })
     const body = await res.text()
     assert.ok(!res.ok)
-    assert.equal(res.status, 415)
+    assert.strictEqual(res.status, 415)
 
-    assert.equal(body, 'Unsupported Media Type')
+    assert.strictEqual(body, 'Unsupported Media Type')
   })
 })

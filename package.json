@@ -33,11 +33,11 @@
     "read-pkg-up": "^4.0.0"
   },
   "scripts": {
-    "lint:examples": "standard \"examples/lib/**/*.js\"",
+    "lint:examples": "standard \"examples/**/*.js\"",
     "test:examples": "npm run lint:examples && NODE_ENV=test mocha --recursive examples/test",
     "example": "node examples/lib/run",
-    "lint:benchmark": "standard \"benchmark/lib/**/*.js\"",
-    "benchmark": "NODE_ENV=development node benchmark",
+    "lint:benchmark": "standard \"benchmark/**/*.js\"",
+    "benchmark": "npm run lint:benchmark && NODE_ENV=development node benchmark",
     "coverage": "nyc --reporter=lcov npm test",
     "lint": "standard \"src/**/*.js\" \"test/**/*.js\"",
     "postversion": "git push && git push --tags",
