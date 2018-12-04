@@ -24,7 +24,7 @@ describe('listeners', function () {
 
     this.listeners.add(listener)
 
-    assert.equal(this.listeners.size, 1)
+    assert.strictEqual(this.listeners.size, 1)
   })
 
   it('.add() twice the same listener should just add once', function () {
@@ -33,7 +33,7 @@ describe('listeners', function () {
     this.listeners.add(listener)
     this.listeners.add(listener)
 
-    assert.equal(this.listeners.size, 1)
+    assert.strictEqual(this.listeners.size, 1)
   })
 
   it('.add() should throw error if element to add is not a listener', function () {

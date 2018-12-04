@@ -23,7 +23,7 @@ describe('leader', function () {
   })
 
   it('.role should be LEADER', function () {
-    assert.equal(this.leader.role, LEADER)
+    assert.strictEqual(this.leader.role, LEADER)
   })
 
   it('.run() should create as many workers as CPUs there are in the machine', async function () {
@@ -37,7 +37,7 @@ describe('leader', function () {
 
     await this.leader.run()
 
-    assert.equal(clusterForkStub.callCount, this.serverPoolSize)
+    assert.strictEqual(clusterForkStub.callCount, this.serverPoolSize)
   })
 
   it('.close() should terminate the process', async function () {
@@ -166,7 +166,7 @@ describe('leader', function () {
       await this.leader.rebootServer('1')
     } catch (err) {
       assert.ok(clusterForkStub.calledOnce)
-      assert.equal(err.message, 'wadus error')
+      assert.strictEqual(err.message, 'wadus error')
     }
   })
 
@@ -186,7 +186,7 @@ describe('leader', function () {
       await this.leader.rebootServer('1')
     } catch (err) {
       // assert.ok(clusterForkStub.calledOnce)
-      assert.equal(err.message, 'Server exited accidentaly')
+      assert.strictEqual(err.message, 'Server exited accidentaly')
     }
   })
 

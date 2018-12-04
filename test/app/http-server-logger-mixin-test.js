@@ -50,7 +50,7 @@ describe('http-server-logger-mixin', function () {
     try {
       await this.httpServer.run()
     } catch (err) {
-      assert.equal(error, err)
+      assert.strictEqual(error, err)
       assert.ok(loggerInfoStub.calledOnce)
       assert.ok(loggerErrorStub.calledOnce)
     }
@@ -72,7 +72,7 @@ describe('http-server-logger-mixin', function () {
     try {
       await this.httpServer.close()
     } catch (err) {
-      assert.equal(error, err)
+      assert.strictEqual(error, err)
       assert.ok(loggerInfoStub.calledOnce)
       assert.ok(loggerErrorStub.calledOnce)
     }

@@ -42,7 +42,7 @@ describe('launcher', function () {
   })
 
   it('.role should get target\'s role', function () {
-    assert.equal(this.launcher.role, 'role')
+    assert.strictEqual(this.launcher.role, 'role')
   })
 
   it('.run() should init successfully', async function () {
@@ -61,7 +61,7 @@ describe('launcher', function () {
       await this.launcher.run()
     } catch (err) {
       assert.ok(targetRunStub.calledOnce)
-      assert.equal(err, error)
+      assert.strictEqual(err, error)
     }
   })
 
@@ -81,7 +81,7 @@ describe('launcher', function () {
       await this.launcher.close()
     } catch (err) {
       assert.ok(targetCloseStub.calledOnce)
-      assert.equal(err, error)
+      assert.strictEqual(err, error)
     }
   })
 
@@ -101,7 +101,7 @@ describe('launcher', function () {
       await this.launcher.exit()
     } catch (err) {
       assert.ok(targetExitStub.calledWithExactly(undefined))
-      assert.equal(err, error)
+      assert.strictEqual(err, error)
     }
   })
 
@@ -121,7 +121,7 @@ describe('launcher', function () {
       await this.launcher.exit(1)
     } catch (err) {
       assert.ok(targetExitStub.calledWithExactly(1))
-      assert.equal(err, error)
+      assert.strictEqual(err, error)
     }
   })
 })

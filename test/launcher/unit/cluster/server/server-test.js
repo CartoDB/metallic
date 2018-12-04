@@ -23,7 +23,7 @@ describe('worker', function () {
   })
 
   it('.role should be SERVER', function () {
-    assert.equal(this.server.role, SERVER)
+    assert.strictEqual(this.server.role, SERVER)
   })
 
   it('.run() should run server successfully', async function () {
@@ -44,7 +44,7 @@ describe('worker', function () {
     try {
       await this.server.run()
     } catch (err) {
-      assert.equal(err, error)
+      assert.strictEqual(err, error)
       assert.ok(!serverExitStub.called)
       assert.ok(httpServerRunStub.calledOnce)
     }
@@ -86,7 +86,7 @@ describe('worker', function () {
     try {
       await this.server.exit()
     } catch (err) {
-      assert.equal(err, error)
+      assert.strictEqual(err, error)
       assert.ok(httpServerCloseStub.calledOnce)
       assert.ok(!processExitStub.called)
     }

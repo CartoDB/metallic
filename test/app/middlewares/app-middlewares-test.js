@@ -26,7 +26,7 @@ describe('logger-outputs', function () {
 
     this.appMiddlewares.add(middleware)
 
-    assert.equal(this.appMiddlewares.size, 1)
+    assert.strictEqual(this.appMiddlewares.size, 1)
   })
 
   it('.add() twice the same middleware should just add once', function () {
@@ -35,7 +35,7 @@ describe('logger-outputs', function () {
     this.appMiddlewares.add(middleware)
     this.appMiddlewares.add(middleware)
 
-    assert.equal(this.appMiddlewares.size, 1)
+    assert.strictEqual(this.appMiddlewares.size, 1)
   })
 
   it('.add() should throw error if element to add is not a middleware', function () {

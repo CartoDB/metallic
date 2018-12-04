@@ -44,7 +44,7 @@ describe('metrics-gauge-cpu-mixin', function () {
     await this.metrics.run()
     await this.metrics.close()
 
-    assert.equal(typeof this.metrics.memoryInterval, 'object')
+    assert.strictEqual(typeof this.metrics.memoryInterval, 'object')
     assert.ok(loggerDebugStub.calledTwice)
   })
 
@@ -61,6 +61,6 @@ describe('metrics-gauge-cpu-mixin', function () {
       provider
     })
 
-    assert.equal(this.metrics.memoryInterval, undefined)
+    assert.strictEqual(this.metrics.memoryInterval, undefined)
   })
 })

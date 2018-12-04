@@ -27,7 +27,7 @@ describe('logger-outputs', function () {
 
     this.loggerOutputs.add(loggerOutput)
 
-    assert.equal(this.loggerOutputs.size, 1)
+    assert.strictEqual(this.loggerOutputs.size, 1)
   })
 
   it('.add() should not add output when it is not available', function () {
@@ -36,7 +36,7 @@ describe('logger-outputs', function () {
 
     this.loggerOutputs.add(loggerOutput)
 
-    assert.equal(this.loggerOutputs.size, 0)
+    assert.strictEqual(this.loggerOutputs.size, 0)
   })
 
   it('.add() twice the same logger-output should just add once', function () {
@@ -45,7 +45,7 @@ describe('logger-outputs', function () {
     this.loggerOutputs.add(loggerOutput)
     this.loggerOutputs.add(loggerOutput)
 
-    assert.equal(this.loggerOutputs.size, 1)
+    assert.strictEqual(this.loggerOutputs.size, 1)
   })
 
   it('.add() should throw error if element to add is not a logger output', function () {
@@ -60,6 +60,6 @@ describe('logger-outputs', function () {
     this.loggerOutputs.add(loggerOutput)
 
     assert.ok(Array.isArray(this.loggerOutputs.toArray()))
-    assert.equal(this.loggerOutputs.toArray().length, 1)
+    assert.strictEqual(this.loggerOutputs.toArray().length, 1)
   })
 })

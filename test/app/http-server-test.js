@@ -118,7 +118,7 @@ describe('server', function () {
     try {
       await this.httpServer.close()
     } catch (err) {
-      assert.equal(err.message, 'irrelevant')
+      assert.strictEqual(err.message, 'irrelevant')
       assert.ok(httpServerStub.calledOnce)
     }
   })

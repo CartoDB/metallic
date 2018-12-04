@@ -10,27 +10,27 @@ describe('role', function () {
     const clusterOn = false
     const isLeader = Role.isLeader(clusterOn)
 
-    assert.equal(isLeader, false)
+    assert.strictEqual(isLeader, false)
   })
 
   it('Role.get() should return SERVER', function () {
     const clusterOff = false
-    assert.equal(Role.get(clusterOff), SERVER)
+    assert.strictEqual(Role.get(clusterOff), SERVER)
   })
 
   it('Role.get() should return LEADER', function () {
     const clusterOn = true
-    assert.equal(Role.get(clusterOn), LEADER)
+    assert.strictEqual(Role.get(clusterOn), LEADER)
   })
 
   it('Role.getName() should return \'server\'', function () {
     const clusterOff = false
-    assert.equal(Role.getName(clusterOff), 'server')
+    assert.strictEqual(Role.getName(clusterOff), 'server')
   })
 
   it('Role.getName() should return \'leader\'', function () {
     const clusterOn = true
-    assert.equal(Role.getName(clusterOn), 'leader')
+    assert.strictEqual(Role.getName(clusterOn), 'leader')
   })
 
   it('create Role directly with "new" should throw error', function () {
@@ -41,20 +41,20 @@ describe('role', function () {
     const clusterOn = true
     const isLeader = Role.isLeader(clusterOn)
 
-    assert.equal(isLeader, true)
+    assert.strictEqual(isLeader, true)
   })
 
   it('.isServer(!clusterOn) should return true', function () {
     const clusterOn = false
     const isServer = Role.isServer(clusterOn)
 
-    assert.equal(isServer, true)
+    assert.strictEqual(isServer, true)
   })
 
   it('.isServer(clusterOn) should return false', function () {
     const clusterOn = true
     const isServer = Role.isServer(clusterOn)
 
-    assert.equal(isServer, false)
+    assert.strictEqual(isServer, false)
   })
 })

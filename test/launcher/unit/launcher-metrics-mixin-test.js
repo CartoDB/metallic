@@ -39,7 +39,7 @@ describe('launcher-metrics-mixin', function () {
     try {
       await this.launcher.run()
     } catch (err) {
-      assert.equal(error, err)
+      assert.strictEqual(error, err)
       assert.ok(metricsRunStub.calledOnce)
     }
   })
@@ -59,7 +59,7 @@ describe('launcher-metrics-mixin', function () {
     try {
       await this.launcher.close()
     } catch (err) {
-      assert.equal(error, err)
+      assert.strictEqual(error, err)
       assert.ok(metricsCloseStub.calledOnce)
     }
   })

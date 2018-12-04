@@ -43,7 +43,7 @@ describe('launcher-logger-mixin', function () {
     try {
       await this.launcher.run()
     } catch (err) {
-      assert.equal(error, err)
+      assert.strictEqual(error, err)
       assert.ok(loggerRunStub.calledOnce)
       assert.ok(loggerInfoStub.calledOnce)
       assert.ok(loggerErrorStub.calledOnce)
@@ -68,7 +68,7 @@ describe('launcher-logger-mixin', function () {
     try {
       await this.launcher.close()
     } catch (err) {
-      assert.equal(error, err)
+      assert.strictEqual(error, err)
       assert.ok(loggerInfoStub.calledOnce)
       assert.ok(loggerErrorStub.calledOnce)
     }

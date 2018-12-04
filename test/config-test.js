@@ -8,7 +8,7 @@ describe('config examples', function () {
 
     const { logger } = metallic
 
-    assert.equal(logger.fields.name, name)
+    assert.strictEqual(logger.fields.name, name)
   })
 
   it('should listen on the configured port', async function () {
@@ -18,7 +18,7 @@ describe('config examples', function () {
     const httpServerInfo = await metallic.start()
     await metallic.stop()
 
-    Object.values(httpServerInfo).forEach(({ port }) => assert.equal(port, expectedPort))
+    Object.values(httpServerInfo).forEach(({ port }) => assert.strictEqual(port, expectedPort))
   })
 
   it('should not create a logger instance', function () {
@@ -28,7 +28,7 @@ describe('config examples', function () {
       }
     })
 
-    assert.equal(logger, undefined)
+    assert.strictEqual(logger, undefined)
   })
 
   it('should create a logger with console output', function () {
@@ -83,7 +83,7 @@ describe('config examples', function () {
       }
     })
 
-    assert.equal(metrics.prefix, 'metallic:server')
+    assert.strictEqual(metrics.prefix, 'metallic:server')
   })
 
   it('should not create a metrics instance', function () {
@@ -93,6 +93,6 @@ describe('config examples', function () {
       }
     })
 
-    assert.equal(metrics, undefined)
+    assert.strictEqual(metrics, undefined)
   })
 })

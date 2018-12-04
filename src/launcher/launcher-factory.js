@@ -1,5 +1,5 @@
 import { FactoryInterface } from '../interfaces'
-import { default as ClusterFactory } from './cluster'
+import ClusterFactory from './cluster'
 import { Listeners } from '../listeners'
 import ListenerLoggerMixin from './listener-logger-mixin'
 import SigintListener from './sigint-listener'
