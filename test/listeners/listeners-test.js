@@ -6,7 +6,7 @@ class Listener extends ListenerInterface {}
 
 describe('listeners', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     this.listeners = new Listeners()
   })

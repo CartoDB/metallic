@@ -10,7 +10,7 @@ describe('launcher-exit-signal-listener-mixin', function () {
   beforeEach(function () {
     const EventedLauncher = LauncherExitSignalListenerMixin.mix(DummyLauncher)
 
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     const exitSignalListeners = this.exitSignalListeners = new SigintListener({ emitter })

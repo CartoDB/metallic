@@ -6,7 +6,7 @@ import SigtermListener from '../../../src/launcher/sigterm-listener'
 
 describe('sigterm-listener', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     this.sigtermListener = new SigtermListener({ emitter })

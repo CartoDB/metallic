@@ -21,7 +21,7 @@ class DummyMetricsProvider extends MetricsInterface {
 
 describe('metrics', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const provider = this.provider = new DummyMetricsProvider()
 

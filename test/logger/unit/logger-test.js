@@ -7,7 +7,7 @@ class LoggerProvider extends LoggerInterface {}
 
 describe('logger', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
     this.provider = new LoggerProvider()
     this.logger = new Logger({
       provider: this.provider

@@ -12,7 +12,7 @@ class Logger extends LoggerInterface {}
 
 describe('server', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const port = this.port = 9876
     const app = this.app = new Listener()

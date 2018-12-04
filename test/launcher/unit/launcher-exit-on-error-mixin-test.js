@@ -14,7 +14,7 @@ describe('launcher-exit-on-error-mixin', function () {
   beforeEach(function () {
     const ExitOnErrorLauncher = LauncherExitOnErrorMixin.mix(FaultyLauncher)
 
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     this.launcher = new ExitOnErrorLauncher()
   })

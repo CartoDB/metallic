@@ -6,7 +6,7 @@ import LogCommandListener from '../../../src/logger/log-command-listener'
 
 describe('log-command-listener', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     this.emitter = new EventEmitter()
     this.logCommandListener = new LogCommandListener(this.emitter)

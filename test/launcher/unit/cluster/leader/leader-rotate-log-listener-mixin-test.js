@@ -11,7 +11,7 @@ describe('leader-rotate-log-listener-mixin', function () {
   beforeEach(function () {
     const Leader = LeaderRotateLogListenerMixin.mix(DummyLeader)
 
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     const sigusr2Listeners = this.sigusr2Listeners = new Sigusr2Listener({ emitter })

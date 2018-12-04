@@ -6,7 +6,7 @@ import UncaughtExceptionListener from '../../../src/launcher/uncaught-exception-
 
 describe('uncaught-exception-listener', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     this.uncaughtExceptionListener = new UncaughtExceptionListener({ emitter })

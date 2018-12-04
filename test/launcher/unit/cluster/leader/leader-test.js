@@ -10,7 +10,7 @@ class Cluster extends EventEmitter {
 
 describe('leader', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const cluster = this.cluster = new Cluster()
     const serverPoolSize = this.serverPoolSize = 2

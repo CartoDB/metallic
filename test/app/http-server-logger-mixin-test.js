@@ -18,7 +18,7 @@ class DummyHttpServer extends RunnerInterface {
 
 describe('http-server-logger-mixin', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const LoggedHttpServer = HttpServerLoggerMixin.mix(DummyHttpServer)
 

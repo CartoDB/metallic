@@ -7,7 +7,7 @@ class AppMiddlewares extends MiddlewareInterface {}
 
 describe('app', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     this.provider = {
       use: () => {},

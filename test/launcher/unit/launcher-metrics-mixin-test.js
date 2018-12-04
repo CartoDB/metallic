@@ -11,7 +11,7 @@ describe('launcher-metrics-mixin', function () {
   beforeEach(function () {
     const MetricsLauncher = LauncherMetricsMixin.mix(DummyLauncher)
 
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
     const metrics = this.metrics = new Metrics()
     this.launcher = new MetricsLauncher({ metrics })
   })

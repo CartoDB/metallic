@@ -11,7 +11,7 @@ describe('logger-sighup-listener-mixin', function () {
   beforeEach(function () {
     const EventedLogger = LoggerSighupListenerMixin.mix(DummyLogger)
 
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     this.emitter = new EventEmitter()
     this.sighupListener = new SighupListener(this.emitter)

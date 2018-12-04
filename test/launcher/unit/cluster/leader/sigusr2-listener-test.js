@@ -5,7 +5,7 @@ import Sigusr2Listener from '../../../../../src/launcher/cluster/leader/sigusr2-
 
 describe('sigusr2-listener', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     this.sigusr2Listener = new Sigusr2Listener({ emitter })

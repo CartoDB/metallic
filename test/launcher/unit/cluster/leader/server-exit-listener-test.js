@@ -5,7 +5,7 @@ import ServerExitListener from '../../../../../src/launcher/cluster/leader/serve
 
 describe('server-exit-listener', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     this.serverExitListener = new ServerExitListener({ emitter })

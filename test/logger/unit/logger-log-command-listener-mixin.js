@@ -11,7 +11,7 @@ describe('logger-log-command-listener-mixin', function () {
   beforeEach(function () {
     const EventedLogger = LoggerLogCommandListenerMixin.mix(DummyLogger)
 
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     this.emitter = new EventEmitter()
     this.logCommandListener = new LogCommandListener(this.emitter)

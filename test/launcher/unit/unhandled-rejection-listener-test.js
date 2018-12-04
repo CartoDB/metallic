@@ -9,7 +9,7 @@ class Logger extends LoggerInterface {}
 
 describe('unhandled-rejection-listener', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     const logger = this.logger = new Logger()

@@ -20,7 +20,7 @@ describe('launcher-unhandled-rejection-listener-mixin', function () {
   beforeEach(function () {
     const EventedLauncher = LauncherUnhandledRejectionListenerMixin.mix(Launcher)
 
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     const unhandledRejectionListeners = this.unhandledRejectionListeners = new UnhandledRejectionListener({ emitter })

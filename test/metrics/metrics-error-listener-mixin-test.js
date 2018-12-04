@@ -17,7 +17,7 @@ class DummyLogger extends LoggerInterface {
 
 describe('metrics-error-listener-mixin', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const provider = this.provider = new DummyMetrics()
     const logger = this.logger = new DummyLogger()

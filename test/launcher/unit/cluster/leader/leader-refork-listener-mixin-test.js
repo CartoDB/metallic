@@ -9,7 +9,7 @@ import cluster from 'cluster'
 
 describe('leader-refork-listener-mixin', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const Leader = LeaderReforkListenerMixin.mix(DummyLeader)
 

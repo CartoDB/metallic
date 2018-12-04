@@ -5,7 +5,7 @@ import SighupListener from '../../../../../src/launcher/cluster/leader/sighup-li
 
 describe('sigterm-listener', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     this.sighupListener = new SighupListener({ emitter })

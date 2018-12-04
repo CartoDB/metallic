@@ -8,7 +8,7 @@ class HttpServer extends RunnerInterface {}
 
 describe('worker', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const httpServer = this.httpServer = new HttpServer()
     this.server = new Server({ httpServer })

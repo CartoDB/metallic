@@ -6,7 +6,7 @@ import SigintListener from '../../../src/launcher/sigint-listener'
 
 describe('sigint-listener', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const emitter = this.emitter = new EventEmitter()
     this.sigintListener = new SigintListener({ emitter })

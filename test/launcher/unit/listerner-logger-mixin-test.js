@@ -14,7 +14,7 @@ class Logger extends LoggerInterface {}
 
 describe('listener-logger-mixin', function () {
   beforeEach(function () {
-    this.sandbox = sinon.sandbox.create()
+    this.sandbox = sinon.createSandbox()
 
     const logger = this.logger = new Logger()
     const emitter = this.emitter = new EventEmitter()
