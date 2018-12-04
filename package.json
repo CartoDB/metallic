@@ -35,8 +35,9 @@
   },
   "scripts": {
     "clean:benchmark": "rimraf benchmark/lib",
+    "lint:benchmark": "standard \"benchmark/src/**/*.js\"",
     "build:benchmark": "npm run build && npm run clean:benchmark && babel benchmark/src -d benchmark/lib --source-maps inline",
-    "test:benchmark": "NODE_ENV=test mocha --recursive --require babel-register benchmark/test",
+    "test:benchmark": "npm run lint:benchmark && NODE_ENV=test mocha --recursive --require babel-register benchmark/test",
     "benchmark": "npm run build:benchmark && NODE_ENV=development node benchmark/lib/benchmark",
     "prebuild": "npm run clean",
     "build": "babel src -d lib --source-maps inline",
