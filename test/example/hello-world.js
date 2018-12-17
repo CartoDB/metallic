@@ -1,3 +1,5 @@
+'use strict'
+
 const Metallic = require('../../lib')
 const { SERVER } = Metallic
 

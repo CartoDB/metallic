@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const { ListenerInterface } = require('../../lib/listeners')
 const { UnimplementedMethod } = require('../../lib/errors')

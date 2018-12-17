@@ -1,3 +1,5 @@
+'use strict'
+
 const LoggerInterface = require('../../../lib/logger/logger-interface')
 
 module.exports = class DummyLogger extends LoggerInterface {

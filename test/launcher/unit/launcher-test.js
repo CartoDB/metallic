@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const sinon = require('sinon')
 const ClusterInterface = require('../../../lib/launcher/cluster/cluster-interface')

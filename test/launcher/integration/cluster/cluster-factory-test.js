@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const LoggerFactory = require('../../../../lib/logger')
 const MetricsFactory = require('../../../../lib/metrics')

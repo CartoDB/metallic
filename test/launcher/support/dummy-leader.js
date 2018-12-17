@@ -1,3 +1,5 @@
+'use strict'
+
 const LeaderInterface = require('../../../lib/launcher/cluster/leader/leader-interface')
 
 module.exports = class DummyLeader extends LeaderInterface {

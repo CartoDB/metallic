@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const MetricsFactory = require('../../lib/metrics')
 const { MetricsInterface } = MetricsFactory

@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const { LoggerInterface } = require('../../../lib/logger')
 const { AbstractClassError, UnimplementedError } = require('../../../lib/errors')

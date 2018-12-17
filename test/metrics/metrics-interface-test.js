@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const MetricsInterface = require('../../lib/metrics/metrics-interface')
 const { UnimplementedMethod } = require('../../lib/errors')

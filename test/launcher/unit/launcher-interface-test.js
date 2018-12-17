@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const LauncherInterface = require('../../../lib/launcher/launcher-interface')
 const { AbstractClassError, UnimplementedError } = require('../../../lib/errors')

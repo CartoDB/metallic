@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const HelloWorld = require('./example/hello-world')
 

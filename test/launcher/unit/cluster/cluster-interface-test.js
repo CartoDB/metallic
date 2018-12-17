@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const ClusterInterface = require('../../../../lib/launcher/cluster/cluster-interface')
 const { AbstractClassError, UnimplementedError } = require('../../../../lib/errors')

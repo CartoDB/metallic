@@ -1,3 +1,5 @@
+'use strict'
+
 const meow = require('meow')
 const AppSpawner = require('./app-spawner')
 const WrkSpawner = require('./wrk-spawner')

@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const Role = require('../../../../lib/launcher/cluster/role')
 const { LEADER, SERVER } = Role

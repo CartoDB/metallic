@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const LoggerOutputs = require('../../../lib/logger/outputs/logger-outputs')
 const LoggerOutputInterface = require('../../../lib/logger/outputs/logger-output-interface')

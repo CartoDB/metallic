@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const LeaderInterface = require('../../../../../lib/launcher/cluster/leader/leader-interface')
 const { AbstractClassError, UnimplementedError } = require('../../../../../lib/errors')

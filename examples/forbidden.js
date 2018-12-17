@@ -1,3 +1,5 @@
+'use strict'
+
 const { STATUS_CODES } = require('http')
 const Metallic = require('../lib')
 const { SERVER } = Metallic

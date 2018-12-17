@@ -1,3 +1,5 @@
+'use strict'
+
 const pkg = require('../package.json')
 const prependFile = require('prepend-file')
 

@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const fetch = require('node-fetch')
 const HelloWorld = require('./example/hello-world')

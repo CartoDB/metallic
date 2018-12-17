@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const { RunnerInterface } = require('../../lib/interfaces')
 const HttpServerFactory = require('../../lib/app/http-server-factory')

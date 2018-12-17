@@ -1,3 +1,5 @@
+'use strict'
+
 const HelloWorld = require('./hello-world')
 const Negotiation = require('./negotiation')
 const Forbidden = require('./forbidden')

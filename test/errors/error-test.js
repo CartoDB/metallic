@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const { AbstractClassError, UnplimentedError, ParentClassError, NotReadyError, ExitError } = require('../../lib/errors')
 

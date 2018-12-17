@@ -1,3 +1,5 @@
+'use strict'
+
 const meow = require('meow')
 const HelloWorld = require('./hello-world')
 const Forbidden = require('./forbidden')

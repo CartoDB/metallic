@@ -1,3 +1,5 @@
+'use strict'
+
 const assert = require('assert')
 const sinon = require('sinon')
 const AppMiddlewares = require('../../../lib/app/middlewares/app-middlewares')
