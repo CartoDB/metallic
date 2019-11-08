@@ -11,8 +11,8 @@ describe('metallic content middleware example', function () {
 
   beforeEach(async function () {
     const httpServersInfo = await this.negotiation.start()
-    for (let pid in httpServersInfo) {
-      if (httpServersInfo.hasOwnProperty(pid)) {
+    for (const pid in httpServersInfo) {
+      if (Object.prototype.hasOwnProperty.call(httpServersInfo, pid)) {
         this.port = httpServersInfo[pid].port
         break
       }
@@ -26,7 +26,7 @@ describe('metallic content middleware example', function () {
   it('GET / should accept json content', async function () {
     const res = await fetch(`http://localhost:${this.port}?msg=Hello World`, {
       headers: {
-        'Accept': 'application/json'
+        Accept: 'application/json'
       }
     })
     const body = await res.json()
@@ -40,7 +40,7 @@ describe('metallic content middleware example', function () {
   it('GET / should accept html content', async function () {
     const res = await fetch(`http://localhost:${this.port}?msg=Hello World`, {
       headers: {
-        'Accept': 'text/html'
+        Accept: 'text/html'
       }
     })
     const body = await res.text()
@@ -54,7 +54,7 @@ describe('metallic content middleware example', function () {
   it('GET / should not accept xml content', async function () {
     const res = await fetch(`http://localhost:${this.port}?msg=Hello World`, {
       headers: {
-        'Accept': 'application/xml'
+        Accept: 'application/xml'
       }
     })
     const body = await res.text()

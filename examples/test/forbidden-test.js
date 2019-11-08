@@ -13,8 +13,8 @@ describe('metallic 503 forbidden example', function () {
 
   beforeEach(async function () {
     const httpServersInfo = await this.forbidden.start()
-    for (let pid in httpServersInfo) {
-      if (httpServersInfo.hasOwnProperty(pid)) {
+    for (const pid in httpServersInfo) {
+      if (Object.prototype.hasOwnProperty.call(httpServersInfo, pid)) {
         this.port = httpServersInfo[pid].port
         break
       }
