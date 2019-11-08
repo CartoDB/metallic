@@ -24,7 +24,7 @@ describe('metallic', function () {
       })
     })
 
-    it(`.role should return server`, function () {
+    it('.role should return server', function () {
       assert.strictEqual(this.metallic.role, SERVER)
     })
 
@@ -67,7 +67,7 @@ describe('metallic', function () {
       })
     })
 
-    it(`.role should return server`, function () {
+    it('.role should return server', function () {
       assert.strictEqual(this.role, SERVER)
     })
 

@@ -39,7 +39,7 @@ describe('logger', function () {
 
   it('.debug() should log at debug level', function () {
     this.provider.debug = this.sandbox.spy()
-    const args = [ 'debug', 'wadus message' ]
+    const args = ['debug', 'wadus message']
 
     this.logger.debug(...args)
 
@@ -48,7 +48,7 @@ describe('logger', function () {
 
   it('.log() should log', function () {
     this.provider.info = this.sandbox.spy()
-    const args = [ 'info', 'wadus message' ]
+    const args = ['info', 'wadus message']
 
     this.logger.log(...args)
 
@@ -57,7 +57,7 @@ describe('logger', function () {
 
   it('.info() should log at info level', function () {
     this.provider.info = this.sandbox.spy()
-    const args = [ 'wadus message' ]
+    const args = ['wadus message']
 
     this.logger.info(...args)
 
@@ -66,7 +66,7 @@ describe('logger', function () {
 
   it('.warn() should log at warn level', function () {
     this.provider.warn = this.sandbox.spy()
-    const args = [ 'wadus message' ]
+    const args = ['wadus message']
 
     this.logger.warn(...args)
 
@@ -75,7 +75,7 @@ describe('logger', function () {
 
   it('.error() should log at error level', function () {
     this.provider.error = this.sandbox.spy()
-    const args = [ 'wadus message' ]
+    const args = ['wadus message']
 
     this.logger.error(...args)
 

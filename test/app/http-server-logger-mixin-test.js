@@ -15,6 +15,7 @@ class DummyHttpServer extends RunnerInterface {
       }
     }
   }
+
   async close () {}
 }
 

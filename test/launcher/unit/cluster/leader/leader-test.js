@@ -32,7 +32,7 @@ describe('leader', function () {
     const clusterForkStub = this.sandbox.stub(this.cluster, 'fork').returns({
       on: (event, done) => {
         if (event === 'message') {
-          done({ 'pid': { port: '9191' } })
+          done({ pid: { port: '9191' } })
         }
       }
     })
@@ -118,8 +118,8 @@ describe('leader', function () {
 
   it('.reboot() should restart all workers', async function () {
     this.cluster.workers = {
-      '1': {},
-      '2': {}
+      1: {},
+      2: {}
     }
 
     const leaderRebootServerStub = this.sandbox.stub(this.leader, 'rebootServer').returns(Promise.resolve())
@@ -141,7 +141,7 @@ describe('leader', function () {
       })
     }
     this.cluster.workers = {
-      '1': serverFake
+      1: serverFake
     }
 
     await this.leader.rebootServer('1')
@@ -161,7 +161,7 @@ describe('leader', function () {
       })
     }
     this.cluster.workers = {
-      '1': serverFake
+      1: serverFake
     }
 
     try {
@@ -181,7 +181,7 @@ describe('leader', function () {
       })
     }
     this.cluster.workers = {
-      '1': serverFake
+      1: serverFake
     }
 
     try {
@@ -194,8 +194,8 @@ describe('leader', function () {
 
   it('.rotateLog() should rotate logs for all server', async function () {
     this.cluster.workers = {
-      '1': {},
-      '2': {}
+      1: {},
+      2: {}
     }
 
     const leaderRotateLogStub = this.sandbox.stub(this.leader, 'sendSignalToRotateLog').returns(Promise.resolve())
