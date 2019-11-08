@@ -13,7 +13,7 @@ module.exports = class AppSpawner {
 
       this.app = spawn('node', args, {
         // Use "stdio: [ 'inherit', 'inherit', 'inherit', 'ipc' ]" for debugging
-        stdio: [ 'ignore', 'ignore', 'ignore', 'ipc' ]
+        stdio: ['ignore', 'ignore', 'ignore', 'ipc']
       })
 
       this.app.on('error', err => reject(err))
@@ -25,8 +25,8 @@ module.exports = class AppSpawner {
           reject(new Error(httpServersInfo.error))
         }
 
-        for (let pid in httpServersInfo) {
-          if (httpServersInfo.hasOwnProperty(pid)) {
+        for (const pid in httpServersInfo) {
+          if (Object.prototype.hasOwnProperty.call(httpServersInfo, pid)) {
             return resolve(httpServersInfo[pid].port)
           }
         }
