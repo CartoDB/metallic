@@ -30,7 +30,7 @@
     "meow": "^5.0.0",
     "node-statsd": "^0.1.1",
     "node-uuid": "^1.4.8",
-    "read-pkg-up": "^4.0.0"
+    "read-pkg-up": "^7.0.0"
   },
   "scripts": {
     "lint:examples": "standard \"examples/**/*.js\"",
